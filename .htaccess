@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# ==========================================
+# CLEAN URL → REAL FILE
+# /collection/Bristol
+# -> /collection/Bristol.html
+# ==========================================
+RewriteRule ^collection/([A-Za-z0-9_-]+)/?$ /collection/$1.html [L,NC]
+
+# ==========================================
+# REDIRECT .HTML TO CLEAN URL
+# /collection/Bristol.html
+# -> /collection/Bristol
+# ==========================================
+RewriteCond %{THE_REQUEST} \s/+collection/([A-Za-z0-9_-]+)\.html[\s?] [NC]
+RewriteRule ^collection/([A-Za-z0-9_-]+)\.html$ /collection/$1 [R=301,L,NC]

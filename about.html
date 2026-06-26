@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About Us — CABIMATE</title>
+  <link rel="icon" type="image/png" href="cabimate.png">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --bg:#050505;
+  --card:#0e0e0e;
+  --white:#f5f5f5;
+  --muted:#b8b8b8;
+  --line:rgba(255,255,255,0.08);
+  --red:#c0001e;
+}
+
+body{
+  background:var(--bg);
+  color:var(--white);
+  font-family:'Montserrat',sans-serif;
+  overflow-x:hidden;
+}
+
+/* HERO */
+
+.about-hero{
+  min-height:100vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:120px 6vw 90px;
+  overflow:hidden;
+}
+
+.about-hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+  linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.2)),
+  url('A30series.webp') center center/cover no-repeat;
+}
+
+.about-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+}
+
+.small-tag{
+  color:#fff;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:20px;
+  opacity:0.8;
+}
+
+.big-title{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(70px,10vw,140px);
+  line-height:0.9;
+  text-transform:uppercase;
+  margin-bottom:24px;
+}
+
+.big-title span{
+  color:var(--red);
+}
+
+.hero-text{
+  font-size:18px;
+  line-height:1.8;
+  color:#ddd;
+  max-width:620px;
+  font-weight:300;
+}
+
+/* STORY */
+
+.story-section{
+  padding:120px 6vw;
+  background:#000;
+}
+
+.story-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.story-image{
+  width:100%;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--line);
+}
+
+.story-image img{
+  width:100%;
+  display:block;
+}
+
+.story-right h2{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(50px,7vw,90px);
+  line-height:0.95;
+  margin-bottom:30px;
+  text-transform:uppercase;
+}
+
+.story-right h2 span{
+  color:var(--red);
+}
+
+.story-right p{
+  color:#bdbdbd;
+  font-size:17px;
+  line-height:1.9;
+  margin-bottom:24px;
+}
+
+/* VALUES */
+
+.values{
+  padding:120px 6vw;
+  background:#080808;
+}
+
+.values-top{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.values-top h2{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(50px,7vw,90px);
+  line-height:1;
+  text-transform:uppercase;
+}
+
+.values-top h2 span{
+  color:var(--red);
+}
+
+.values-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.value-card{
+  background:var(--card);
+  padding:50px 40px;
+  border:1px solid var(--line);
+  transition:0.35s;
+}
+
+.value-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(192,0,30,0.3);
+}
+
+.value-number{
+  font-family:'Anton',sans-serif;
+  color:var(--red);
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+.value-title{
+  font-size:18px;
+  margin-bottom:16px;
+  font-weight:600;
+}
+
+.value-text{
+  color:#b5b5b5;
+  line-height:1.8;
+  font-size:15px;
+}
+
+/* CTA */
+
+.cta{
+  padding:140px 6vw;
+  text-align:center;
+  background:
+  linear-gradient(rgba(0,0,0,0.82),rgba(0,0,0,0.82)),
+  url('https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1600&auto=format&fit=crop') center/cover;
+}
+
+.cta h2{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(55px,8vw,110px);
+  line-height:0.95;
+  margin-bottom:30px;
+  text-transform:uppercase;
+}
+
+.cta h2 span{
+  color:var(--red);
+}
+
+.cta p{
+  max-width:700px;
+  margin:auto;
+  color:#d0d0d0;
+  line-height:1.9;
+  font-size:18px;
+  margin-bottom:40px;
+}
+
+.cta-btn{
+  display:inline-block;
+  background:var(--red);
+  color:#fff;
+  padding:18px 42px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.cta-btn:hover{
+  background:#930016;
+}
+
+/* FOOTER */
+
+footer{
+  padding:40px 6vw;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+footer p{
+  color:#8d8d8d;
+  font-size:13px;
+}
+
+.footer-links{
+  display:flex;
+  gap:24px;
+}
+
+.footer-links a{
+  color:#aaa;
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:1px;
+}
+
+.footer-links a:hover{
+  color:var(--red);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:980px){
+
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+  .values-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+
+  footer{
+    padding:30px 20px;
+    flex-direction:column;
+  }
+
+
+/* ======================================================
+   FAQ SECTION
+====================================================== */
+
+.fw-faq{
+  background:#f5f5f5;
+  padding:140px 7%;
+  color:#000;
+}
+
+.fw-section-label{
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:30px;
+  opacity:.6;
+}
+
+.fw-faq-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:40px;
+  margin-bottom:70px;
+}
+
+.fw-faq-head h2{
+  font-size:clamp(42px,5vw,90px);
+  line-height:.95;
+  font-weight:900;
+  letter-spacing:-2px;
+  max-width:700px;
+}
+
+.fw-faq-head p{
+  max-width:360px;
+  font-size:15px;
+  line-height:1.8;
+  opacity:.7;
+}
+
+.fw-faq-list{
+  border-top:1px solid rgba(0,0,0,.15);
+}
+
+.fw-faq-item{
+  border-bottom:1px solid rgba(0,0,0,.15);
+  padding:34px 0;
+  cursor:pointer;
+}
+
+.fw-faq-question{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:30px;
+}
+
+.fw-faq-question span{
+  font-size:clamp(22px,2vw,34px);
+  font-weight:800;
+  letter-spacing:-1px;
+}
+
+.fw-faq-icon{
+  font-size:30px;
+  font-weight:300;
+  transition:.3s ease;
+}
+
+.fw-faq-answer{
+  max-width:700px;
+  margin-top:22px;
+  font-size:15px;
+  line-height:1.9;
+  opacity:.75;
+
+  max-height:0;
+  overflow:hidden;
+  transition:.4s ease;
+}
+
+.fw-faq-item.active .fw-faq-answer{
+  max-height:200px;
+}
+
+.fw-faq-item.active .fw-faq-icon{
+  transform:rotate(45deg);
+}
+
+/* ======================================================
+   NEWSLETTER
+====================================================== */
+
+.fw-newsletter{
+  background:#000;
+  color:#fff;
+  padding:140px 7%;
+  overflow:hidden;
+}
+
+.fw-newsletter-grid{
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:90px;
+  align-items:center;
+}
+
+.fw-newsletter-left h2{
+  font-size:clamp(48px,6vw,100px);
+  line-height:.92;
+  letter-spacing:-3px;
+  font-weight:900;
+  margin-bottom:30px;
+}
+
+.fw-newsletter-left p{
+  max-width:520px;
+  font-size:16px;
+  line-height:1.9;
+  opacity:.75;
+}
+
+/* FORM */
+
+.fw-newsletter-form{
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+
+.fw-input-group label{
+  display:block;
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:14px;
+  opacity:.6;
+}
+
+.fw-input-group input{
+  width:100%;
+  height:64px;
+  border:none;
+  border-bottom:1px solid rgba(255,255,255,.2);
+  background:transparent;
+  color:#fff;
+  font-size:16px;
+  outline:none;
+}
+
+.fw-input-group input::placeholder{
+  color:rgba(255,255,255,.35);
+}
+
+.fw-submit-btn{
+  width:240px;
+  height:62px;
+  border:none;
+  background:#fff;
+  color:#000;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:.3s ease;
+  margin-top:10px;
+}
+
+.fw-submit-btn:hover{
+  background:#d9d9d9;
+}
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media(max-width:900px){
+
+  .fw-faq,
+  .fw-newsletter{
+    padding:90px 24px;
+  }
+
+  .fw-faq-head{
+    flex-direction:column;
+    align-items:flex-start;
+    margin-bottom:40px;
+  }
+
+  .fw-newsletter-grid{
+    grid-template-columns:1fr;
+    gap:60px;
+  }
+
+  .fw-submit-btn{
+    width:100%;
+  }
+
+}
+
+
+/* ======================================================
+   FAQ TOGGLE FIX
+====================================================== */
+
+.fw-faq-answer{
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transition:
+    max-height .45s ease,
+    opacity .3s ease,
+    margin .3s ease;
+
+  margin-top:0;
+}
+
+.fw-faq-item.active .fw-faq-answer{
+  max-height:300px;
+  opacity:.75;
+  margin-top:22px;
+}
+
+.fw-faq-icon{
+  transition:.35s ease;
+}
+
+.fw-faq-item.active .fw-faq-icon{
+  transform:rotate(45deg);
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #7a0c0c;   /* dark red */
+  color: #ffffff;        /* white arrow */
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.25s ease;
+  z-index: 9999;
+}
+
+#backToTop:hover {
+  background: #a31212;   /* lighter red on hover */
+  transform: translateY(-3px);
+}
+
+#backToTop:active {
+  transform: scale(0.95);
+}
+</style>
+
+<meta property="og:title" content="Cabimate Hardware" />
+<meta property="og:description" content="Premium hardware products and solutions." />
+<meta property="og:image" content="https://cabimatehardware.com/A35a.webp" />
+<meta property="og:url" content="https://cabimatehardware.com/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://cabimatehardware.com/A35a.webp" />
+
+<!-- Link to your centralized master stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+
+<body>
+   <shared-navbar></shared-navbar>
+
+<script src="navbar.js"></script>
+
+
+
+<!-- HERO -->
+
+<section class="about-hero">
+
+  <div class="about-content">
+
+    <div class="small-tag">
+      • OUR STORY
+    </div>
+
+    <h1 class="big-title">
+      DESIGNED<br>
+      FOR <span>MODERN</span><br>
+      INTERIORS.
+    </h1>
+
+    <p class="hero-text">
+      CABIMATE delivers bold, contemporary hardware designed to enhance interiors with style, performance, and lasting quality. Combining modern design, durable craftsmanship, and everyday functionality, our products bring lasting value to kitchens, bathrooms, and living spaces.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- STORY -->
+
+<section class="story-section">
+
+  <div class="story-grid">
+
+    <div class="story-image">
+      <img src="A3939.png" alt="">
+    </div>
+
+    <div class="story-right">
+
+      <h2>
+        BUILT TO<br>
+        <span>ELEVATE</span><br>
+        SPACES.
+      </h2>
+
+      <p>
+        At CABIMATE, we believe cabinet hardware is more than just a finishing detail — it defines the character of a space. Every handle, pull, and knob is designed to enhance modern interiors with clean lines and timeless presence.
+      </p>
+
+      <p>
+        Our collections are created for designers, builders, and homeowners who want premium-looking hardware that adds value to kitchens, bathrooms, and custom interiors.
+      </p>
+
+      <p>
+        From matte black to brushed nickel and polished finishes, CABIMATE delivers modern hardware solutions ready to complete every design vision.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- VALUES -->
+
+<section class="values">
+
+  <div class="values-top">
+
+    <h2>
+      WHY <span>CABIMATE</span>
+    </h2>
+
+  </div>
+
+  <div class="values-grid">
+
+    <div class="value-card">
+
+      <div class="value-number">01</div>
+
+      <div class="value-title">
+        Modern Design
+      </div>
+
+      <div class="value-text">
+        Minimal, bold, and timeless hardware crafted for contemporary interiors and luxury spaces.
+      </div>
+
+    </div>
+
+    <div class="value-card">
+
+      <div class="value-number">02</div>
+
+      <div class="value-title">
+        Premium Finishes
+      </div>
+
+      <div class="value-text">
+        Carefully selected finishes that complement kitchens, bathrooms, and architectural millwork.
+      </div>
+
+    </div>
+
+    <div class="value-card">
+
+      <div class="value-number">03</div>
+
+      <div class="value-title">
+        Project Value
+      </div>
+
+      <div class="value-text">
+        Hardware designed to increase the visual impact and overall value of every interior project.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <h2>
+    CHARM YOUR<br>
+    <span>CABINET</span>
+  </h2>
+
+  <p>
+    Discover modern cabinet hardware designed to complete your interior vision with elegance, strength, and refined detail.
+  </p>
+
+  <a href="collection.html" class="cta-btn">
+    View Collection
+  </a>
+
+</section>
+
+<!-- ======================================================
+     FAQ SECTION
+====================================================== -->
+
+<section class="fw-faq">
+
+  <div class="fw-section-label">
+    SUPPORT
+  </div>
+
+  <div class="fw-faq-head">
+    <h2>Frequently Asked Questions</h2>
+    <p>
+      Everything you need to know about our cabinet
+      and bath hardware collections.
+    </p>
+  </div>
+
+  <div class="fw-faq-list">
+
+    <div class="fw-faq-item active">
+
+      <div class="fw-faq-question">
+        <span>Should I choose cabinet knobs or drawer pulls for my cabinets?</span>
+        <div class="fw-faq-icon">+</div>
+      </div>
+
+      <div class="fw-faq-answer">
+        There is no "right" rule, but functionality is key. Drawer pulls offer better leverage, 
+        making them ideal for heavy drawers and lower cabinetry. Cabinet knobs are often preferred for upper cabinets where you want a lighter, more minimalist aesthetic. Many modern designs successfully mix both for a balanced look—using knobs on doors and pulls on drawers.
+      </div>
+
+    </div>
+
+    <div class="fw-faq-item">
+
+      <div class="fw-faq-question">
+        <span>How do I determine the right size for my cabinet pulls?</span>
+        <div class="fw-faq-icon">+</div>
+      </div>
+
+      <div class="fw-faq-answer">
+        A popular design guideline is to choose a cabinet pull that is approximately one-third the width of the drawer front. For a more contemporary or modern look, you can opt for longer pulls that span half or even the full width of the drawer. 
+        When in doubt, sizing up usually provides a more impactful, premium appearance
+      </div>
+
+    </div>
+
+    <div class="fw-faq-item">
+
+      <div class="fw-faq-question">
+        <span>What finish works best for modern kitchen and cabinet hardware?</span>
+        <div class="fw-faq-icon">+</div>
+      </div>
+
+      <div class="fw-faq-answer">
+        While trends evolve, finishes like Matte Black, Brushed Brass, 
+        and Amber Brass are currently favored for their ability to add contrast and warmth. The best approach is to coordinate your cabinet hardware with your existing fixed elements, such as faucets, light fixtures, 
+        or appliance finishes, to ensure a cohesive, professional design.
+      </div>
+
+    </div>
+
+    <div class="fw-faq-item">
+
+      <div class="fw-faq-question">
+        <span>How do I measure for replacement cabinet hardware?</span>
+        <div class="fw-faq-icon">+</div>
+      </div>
+
+      <div class="fw-faq-answer">
+        If you are replacing existing knobs and pulls, the most important measurement is the "center-to-center" distance—the space between the centers of your two screw holes. Most modern hardware is measured in millimeters (e.g., 96mm, 128mm, 160mm). Matching this distance ensures your new hardware will align perfectly without the need for drilling new holes.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ======================================================
+     NEWSLETTER SECTION
+====================================================== -->
+
+<section class="fw-newsletter">
+
+  <div class="fw-newsletter-grid">
+
+    <!-- LEFT -->
+    <div class="fw-newsletter-left">
+
+      <div class="fw-section-label">
+        STAY CONNECTED
+      </div>
+
+      <h2>
+        Subscribe For  Design Ideas & Exclusive Deals
+      </h2>
+
+      <p>
+        Get interior inspiration, new collection launches,
+        designer trends and exclusive brand pricing.
+      </p>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="fw-newsletter-right">
+
+      <form class="fw-newsletter-form">
+
+        <div class="fw-input-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your name">
+        </div>
+
+        <div class="fw-input-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Your email">
+        </div>
+
+        <div class="fw-input-group">
+          <label>Project Type</label>
+          <input type="text" placeholder="Kitchen / Bath / Designer">
+        </div>
+
+        <button type="submit" class="fw-submit-btn">
+          Subscribe Now
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <button id="backToTop">↑</button>
+
+  <script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  backToTop.style.display = window.scrollY > 300 ? "flex" : "none";
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+
+  <!-- FAQ SCRIPT -->
+  <script>
+
+    const faqItems = document.querySelectorAll('.fw-faq-item');
+
+    faqItems.forEach(item => {
+
+      const question = item.querySelector('.fw-faq-question');
+
+      question.addEventListener('click', () => {
+
+        item.classList.toggle('active');
+
+      });
+
+    });
+
+  </script>
+<script src="/search.js"></script>
+
+<shared-footer></shared-footer>
+
+<script src="footer.js"></script>
+</body>
+</html>

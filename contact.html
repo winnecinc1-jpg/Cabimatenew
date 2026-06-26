@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Us — CABIMATE</title>
+  <link rel="icon" type="image/png" href="cabimate.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --black:#050505;
+  --deep:#0e0e0e;
+  --red:#c0001e;
+  --white:#f5f5f5;
+  --silver:#bdbdbd;
+  --muted:#777;
+
+  --display:'Bebas Neue', sans-serif;
+  --serif:'Cormorant Garamond', serif;
+  --sans:'Montserrat', sans-serif;
+}
+
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:var(--sans);
+  overflow-x:hidden;
+}
+
+
+/* HERO */
+
+.contact-hero{
+  position:relative;
+  min-height:85vh;
+  display:flex;
+  align-items:flex-end;
+  padding:120px 70px 90px;
+  overflow:hidden;
+}
+
+.contact-hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(to right,
+  rgba(0,0,0,0.95) 0%,
+  rgba(0,0,0,0.88) 30%,
+  rgba(0,0,0,0.45) 60%,
+  rgba(0,0,0,0.2) 100%),
+
+  linear-gradient(to top,
+  rgba(0,0,0,0.95),
+  rgba(0,0,0,0.2)),
+
+  url('bg-contact.jpg') center/cover no-repeat;
+}
+
+.contact-hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+
+  background:
+  radial-gradient(circle at center,
+  rgba(192,0,30,0.12),
+  transparent 70%);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+}
+
+.hero-tag{
+  font-size:11px;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  color:var(--red);
+  margin-bottom:25px;
+  font-weight:600;
+}
+
+.hero-title{
+  font-family:var(--display);
+  font-size:clamp(70px,10vw,160px);
+  line-height:.9;
+  margin-bottom:25px;
+}
+
+.hero-title span{
+  color:var(--red);
+}
+
+.hero-text{
+  font-family:var(--serif);
+  font-size:22px;
+  font-style:italic;
+  line-height:1.7;
+  color:#d0d0d0;
+  max-width:560px;
+}
+
+/* NOTICE */
+
+.notice{
+  padding:80px 70px;
+  background:#0b0b0b;
+  border-top:1px solid rgba(255,255,255,0.04);
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+
+.notice-box{
+  max-width:1200px;
+  margin:auto;
+  background:#111;
+  border-left:4px solid var(--red);
+  padding:45px;
+}
+
+.notice-title{
+  font-family:var(--display);
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.notice p{
+  color:#cfcfcf;
+  line-height:1.9;
+  font-size:15px;
+}
+
+/* CONTACT GRID */
+
+.contact-section{
+  padding:100px 70px;
+}
+
+.section-title{
+  font-family:var(--display);
+  font-size:90px;
+  line-height:.9;
+  margin-bottom:20px;
+}
+
+.section-title span{
+  color:var(--red);
+}
+
+.section-sub{
+  font-family:var(--serif);
+  color:#aaa;
+  font-size:20px;
+  font-style:italic;
+  margin-bottom:70px;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.location-card{
+  background:#111;
+  border:1px solid rgba(255,255,255,0.04);
+  overflow:hidden;
+  transition:.4s;
+}
+
+.location-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(192,0,30,0.3);
+}
+
+.location-map iframe{
+  width:100%;
+  height:260px;
+  border:0;
+}
+
+.location-content{
+  padding:35px;
+}
+
+.location-name{
+  font-family:var(--display);
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.location-name span{
+  color:var(--red);
+}
+
+.info{
+  margin-bottom:16px;
+  color:#d0d0d0;
+  line-height:1.8;
+  font-size:14px;
+}
+
+.info strong{
+  color:#fff;
+}
+
+/* TRADE */
+
+.trade{
+  position:relative;
+  padding:120px 70px;
+  overflow:hidden;
+  background:#0c0c0c;
+}
+
+.trade::before{
+  content:'';
+  position:absolute;
+  inset:0;
+
+  background:
+  radial-gradient(circle at center,
+  rgba(192,0,30,0.12),
+  transparent 70%);
+}
+
+.trade-inner{
+  position:relative;
+  z-index:2;
+
+  max-width:1100px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.trade-image img{
+  width:100%;
+  border-radius:24px;
+  display:block;
+}
+
+.trade-content h2{
+  font-family:var(--display);
+  font-size:90px;
+  line-height:.9;
+  margin-bottom:30px;
+}
+
+.trade-content h2 span{
+  color:var(--red);
+}
+
+.trade-content p{
+  color:#ccc;
+  line-height:2;
+  margin-bottom:35px;
+  font-size:15px;
+}
+
+.trade-list{
+  list-style:none;
+  margin-bottom:40px;
+}
+
+.trade-list li{
+  margin-bottom:14px;
+  color:#eee;
+  letter-spacing:1px;
+}
+
+.trade-btn{
+  display:inline-block;
+  padding:18px 36px;
+  background:var(--red);
+  color:#fff;
+  text-decoration:none;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+/* FOOTER */
+
+footer{
+  padding:50px 70px;
+  border-top:1px solid rgba(255,255,255,0.05);
+  color:#777;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+/* MOBILE */
+
+@media(max-width:980px){
+
+  nav{
+    padding:20px;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .contact-hero{
+    padding:140px 25px 70px;
+    min-height:75vh;
+  }
+
+  .hero-title{
+    font-size:85px;
+  }
+
+  .notice,
+  .contact-section,
+  .trade{
+    padding:70px 25px;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .trade-inner{
+    grid-template-columns:1fr;
+  }
+
+  .section-title{
+    font-size:62px;
+  }
+
+  .trade-content h2{
+    font-size:60px;
+  }
+
+}
+
+/* HERO */
+
+.contact-hero{
+  position:relative;
+  min-height:85vh;
+  display:flex;
+  align-items:flex-end;
+  padding:120px 70px 90px;
+  overflow:hidden;
+  background:#000;
+}
+
+/* PNG IMAGE */
+.hero-bg-image{
+  position:absolute;
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  transform:scale(1.05);
+
+  filter:
+    brightness(0.8)
+    contrast(1.05);
+
+  z-index:1;
+}
+
+/* DARK + RED OVERLAY */
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  z-index:2;
+
+  background:
+
+  linear-gradient(
+    to right,
+    rgba(0,0,0,0.98) 0%,
+    rgba(0,0,0,0.92) 28%,
+    rgba(0,0,0,0.65) 52%,
+    rgba(0,0,0,0.22) 75%,
+    rgba(0,0,0,0.1) 100%
+  ),
+
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.95),
+    rgba(0,0,0,0.1)
+  ),
+
+  radial-gradient(
+    circle at center,
+    rgba(192,0,30,0.10),
+    transparent 70%
+  );
+}
+
+/* CONTENT */
+.hero-content{
+  position:relative;
+  z-index:3;
+  max-width:700px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #7a0c0c;   /* dark red */
+  color: #ffffff;        /* white arrow */
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.25s ease;
+  z-index: 9999;
+}
+
+#backToTop:hover {
+  background: #a31212;   /* lighter red on hover */
+  transform: translateY(-3px);
+}
+
+#backToTop:active {
+  transform: scale(0.95);
+}
+
+</style>
+
+<meta property="og:title" content="Cabimate Hardware" />
+<meta property="og:description" content="Premium hardware products and solutions." />
+<meta property="og:image" content="https://cabimatehardware.com/A35a.webp" />
+<meta property="og:url" content="https://cabimatehardware.com/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://cabimatehardware.com/A35a.webp" />
+
+<!-- Link to your centralized master stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- PUT THE NAVBAR TAG HERE (At the very top of the body) -->
+  <shared-navbar></shared-navbar>
+
+
+<!-- HERO -->
+
+<section class="contact-hero">
+
+  <!-- BACKGROUND PNG -->
+  <img src="A26c.webp" alt="" class="hero-bg-image">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <div class="hero-tag">
+      CABIMATE CUSTOMER SERVICE
+    </div>
+
+    <h1 class="hero-title">
+      CONTACT<br>
+      <span>US</span>
+    </h1>
+
+    <p class="hero-text">
+      Visit our showroom locations, connect with our support team,
+      or apply for our exclusive trade member pricing program for designers,
+      builders, and interior professionals.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- NOTICE -->
+
+<section class="notice">
+
+  <div class="notice-box">
+
+    <div class="notice-title">
+      HOLIDAY NOTICE
+    </div>
+
+    <p>
+      Please be informed that all three of our locations —
+      Markham, Vaughan, and Mississauga will be closed
+      for the Public holidays.
+      <br><br>
+
+
+      We appreciate your support and wish you a wonderful holiday season.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-section">
+
+  <h2 class="section-title">
+    SHOWROOM<br>
+    <span>LOCATIONS</span>
+  </h2>
+
+  <p class="section-sub">
+    Discover CABIMATE hardware collections in person across our Ontario showrooms.
+  </p>
+
+  <div class="contact-grid">
+
+    <!-- MARKHAM -->
+
+    <div class="location-card">
+
+      <div class="location-map">
+        <iframe
+        src="https://maps.google.com/maps?q=500%20Esna%20Park%20Dr%20Markham&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+      </div>
+
+      <div class="location-content">
+
+        <div class="location-name">
+          MARKHAM
+        </div>
+
+        <div class="info">
+          <strong>Address:</strong><br>
+          500 Esna Park Dr. Unit 1-4,<br>
+          Markham, Ontario, L3R 1H5, Canada
+        </div>
+
+        <div class="info">
+          <strong>Tel:</strong> 905-604-5515
+        </div>
+
+        <div class="info">
+          <strong>Hours:</strong><br>
+          Monday to Saturday<br>
+          9:00 AM – 5:30 PM
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- VAUGHAN -->
+
+    <div class="location-card">
+
+      <div class="location-map">
+        <iframe
+        src="https://maps.google.com/maps?q=65%20Bowes%20Road%20Vaughan&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+      </div>
+
+      <div class="location-content">
+
+        <div class="location-name">
+          VAUGHAN
+        </div>
+
+        <div class="info">
+          <strong>Address:</strong><br>
+          65 Bowes Road, Unit 8,<br>
+          Vaughan, Ontario, L4K 1H5, Canada
+        </div>
+
+        <div class="info">
+          <strong>Tel:</strong> 905-669-5551
+        </div>
+
+        <div class="info">
+          <strong>Hours:</strong><br>
+          Monday to Friday: 8AM – 5:30PM<br>
+          Saturday: 8AM – 5:30PM
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- MISSISSAUGA -->
+
+    <div class="location-card">
+
+      <div class="location-map">
+        <iframe
+        src="https://maps.google.com/maps?q=1530%20Drew%20Road%20Mississauga&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+      </div>
+
+      <div class="location-content">
+
+        <div class="location-name">
+          MISSISSAUGA
+        </div>
+
+        <div class="info">
+          <strong>Address:</strong><br>
+          1530 Drew Road, Unit 17-18,<br>
+          Mississauga, Ontario, L5S 1W8, Canada
+        </div>
+
+        <div class="info">
+          <strong>Tel:</strong> 905-405-8884
+        </div>
+
+        <div class="info">
+          <strong>Hours:</strong><br>
+          Monday to Saturday<br>
+          9AM – 5:30PM
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TRADE -->
+
+<section class="trade">
+
+  <div class="trade-inner">
+
+    <div class="trade-image">
+      <img src="A34d.webp" alt="A34">
+    </div>
+
+    <div class="trade-content">
+
+      <h2>
+        TRADE<br>
+        <span>MEMBER</span>
+      </h2>
+
+      <p>
+        Join the CABIMATE Trade Program and unlock exclusive pricing,
+        priority support, and premium access for interior designers,
+        contractors, builders, developers, and industry professionals.
+      </p>
+
+      <ul class="trade-list">
+        <li>✓ Exclusive Trade Pricing</li>
+        <li>✓ Priority Product Support</li>
+        <li>✓ Early Access To New Collections</li>
+        <li>✓ Dedicated Project Assistance</li>
+        <li>✓ Bulk Order Advantages</li>
+      </ul>
+
+      <a href="https://winnecinc.com/pages/open-a-trade-account" class="trade-btn">
+        Apply For Trade Account
+      </a>
+
+
+    </div>
+
+  </div>
+
+    <button id="backToTop">↑</button>
+
+</section>
+
+  <script src="navbar.js"></script>
+  <script src="/search.js"></script>
+
+  <script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  backToTop.style.display = window.scrollY > 300 ? "flex" : "none";
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+</body>
+
+<shared-footer></shared-footer>
+
+<script src="footer.js"></script>
+</html>

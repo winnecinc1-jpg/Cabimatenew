@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belfast Collection | Cabimate</title>
+
+<style>
+/* ─── CORE VARIABLES ─── */
+:root {
+  --white: #ffffff;
+  --offwhite: #fdfdfd;
+  --paper: #f7f7f7;
+  --black: #111111;
+  --ink: #1a1a1a;
+  --charcoal: #333333;
+  --smoke: #666666;
+  --silver: #999999;
+  --rule: #eaeaea;
+  --red: #a13d2d;
+
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --serif: "Times New Roman", Times, Georgia, serif;
+  --display: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ─── BASE ─── */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--white);
+  font-family: var(--sans);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── MAIN WRAPPER (IMPORTANT FIX) ─── */
+.page-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 60px);
+  width: 100%;
+}
+
+/* ─── SECTIONS ─── */
+.overview-section,
+.architectural-showcase-wrapper {
+  width: 100%;
+}
+
+/* ─── OVERVIEW ─── */
+.overview-section {
+  padding: 40px 0;
+}
+
+.overview-intro {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.section-tag {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--smoke);
+  margin-bottom: 10px;
+}
+
+.section-h2 {
+  font-size: clamp(32px, 4vw, 56px);
+  line-height: 1.05;
+  margin: 0 0 20px;
+}
+
+.section-h2 span {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.section-body {
+  font-size: 16px;
+  color: var(--charcoal);
+  max-width: 60ch;
+}
+
+/* ─── SHOWCASE ─── */
+.architectural-showcase-wrapper {
+  padding: 40px 0 80px;
+}
+
+.arch-grid-row {
+  display: grid;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.grid-hero { grid-template-columns: 1.2fr 1fr; }
+.grid-specs { grid-template-columns: 1fr 1.2fr; }
+
+/* ─── IMAGE ─── */
+.editorial-image-frame {
+  background: var(--offwhite);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* ─── TEXT ─── */
+.showcase-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.arch-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.arch-label.primary { color: var(--red); }
+.arch-label.muted { color: var(--silver); }
+
+/* ─── DIVIDER ─── */
+.arch-divider {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 70px 0;
+}
+
+/* ─── SPECS ─── */
+.editorial-technical-specs {
+  background: var(--offwhite);
+  padding: 40px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 12px;
+}
+
+.spec-row:last-child { border-bottom: none; }
+
+/* ─── BLUEPRINT ─── */
+.editorial-blueprint-gallery {
+  border: 1px dashed var(--silver);
+  padding: 30px;
+  text-align: center;
+  background: var(--white);
+}
+
+/* ─── MATRIX ─── */
+.matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.matrix-card {
+  border: 1px solid var(--rule);
+  padding: 18px;
+}
+
+/* ─── GALLERY ─── */
+.gallery-masonry-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+}
+
+.gallery-canvas-main {
+  background: var(--paper);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+}
+
+.watermark-text {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  font-size: 70px;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+.quote-card {
+  background: var(--offwhite);
+  padding: 25px;
+  border-left: 2px solid var(--black);
+  margin-bottom: 20px;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+
+  .overview-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-hero,
+  .grid-specs,
+  .matrix-grid,
+  .gallery-masonry-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .arch-grid-row {
+    gap: 30px;
+  }
+}
+
+.floating-collection-btn {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+
+  width: 60px;
+  height: 160px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #7a0c0c;   /* dark red */
+  color: #ffffff;
+
+  text-decoration: none;
+  border-radius: 14px;
+
+  box-shadow: 0 20px 40px rgba(122, 12, 12, 0.35);
+
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.floating-collection-btn span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
+.floating-collection-btn:hover {
+  transform: translateY(-50%) translateX(6px);
+  box-shadow: 0 25px 60px rgba(161, 61, 45, 0.5);
+}
+
+/* Optional pulse glow */
+.floating-collection-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.25), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.floating-collection-btn:hover::after {
+  opacity: 1;
+}
+
+/* MOBILE: hide or shrink */
+@media (max-width: 768px) {
+  .floating-collection-btn {
+    left: 10px;
+    width: 48px;
+    height: 130px;
+  }
+
+  .floating-collection-btn span {
+    font-size: 9px;
+  }
+}
+
+
+
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #7a0c0c;   /* dark red */
+  color: #ffffff;        /* white arrow */
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.25s ease;
+  z-index: 9999;
+}
+
+#backToTop:hover {
+  background: #a31212;   /* lighter red on hover */
+  transform: translateY(-3px);
+}
+
+#backToTop:active {
+  transform: scale(0.95);
+}
+
+
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #7a0c0c;   /* dark red */
+  color: #ffffff;        /* white arrow */
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.25s ease;
+  z-index: 9999;
+}
+
+#backToTop:hover {
+  background: #a31212;   /* lighter red on hover */
+  transform: translateY(-3px);
+}
+
+#backToTop:active {
+  transform: scale(0.95);
+}
+
+
+</style>
+
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<shared-navbar></shared-navbar>
+
+<div class="page-shell">
+
+  <!-- OVERVIEW -->
+  <div class="overview-section">
+    <div class="overview-intro">
+      <div>
+        <div class="section-tag">A38</div>
+        <h2 class="section-h2">Swansea<br><span>Series 5</span></h2>
+        <p class="section-body">
+Swansea Collection is inspired by the tactile depth of industrial precision, reinterpreted for contemporary high-end interiors. 
+     Characterized by a meticulously knurled textured grip and a refined, balanced silhouette, 
+     Swansea brings a sense of industrial-inspired luxury and textured sophistication to modern cabinetry. 
+     The collection embodies a functional aesthetic that seamlessly blends high-grip performance with an elevated, modern visual appeal.
+        </p>
+      </div>
+
+     <dl class="spec-list">
+
+  <div class="spec-row">
+    <dt>Application / Size</dt>
+    <dd>Knobs • 96mm • 128mm • 160mm • 320mm • 12"Appliance Pull</dd>
+  </div>
+  <div class="spec-row">
+    <dt>Finishes</dt>
+    <dd>
+      <span class="finish-item">Gunpowder (GPD)</span>
+      <span class="finish-item">Brushed Satin Nickel (BSN)</span>
+      <span class="finish-item">Amber Brass (ABR)</span>
+      <span class="finish-item">Matte Black (MBK)</span>
+    </dd>
+  </div>
+</dl>
+    </div>
+  </div>
+
+  <!-- SHOWCASE -->
+  <div class="architectural-showcase-wrapper">
+
+    <div class="arch-grid-row grid-hero">
+      <div class="editorial-image-frame">
+        <img src="/A38all2.webp" alt="SwanseaA38">
+      </div>
+
+      <div>
+        <span class="arch-label primary">Swansea // Metropolitan Luxe</span>
+        <p class="showcase-text">
+         Rooted in the tactile discipline of industrial precision, the SWANSEA Collection fuses a meticulously knurled grip with a balanced silhouette. It seamlessly brings a sense of rugged luxury and polished architectural sophistication to modern cabinetry.
+        </p>
+      </div>
+    </div>
+
+    <hr class="arch-divider">
+
+    <div class="arch-grid-row grid-specs">
+
+  <dl class="editorial-technical-specs spec-list">
+  <div class="spec-row">
+    <dt>Recommended Use</dt>
+    <dd>Luxury Kitchen Cabinets • Bathroom Vanities • Wardrobes</dd>
+  </div>
+</dl>
+
+      <div class="editorial-blueprint-gallery">
+        <img src="/A38knobsall.webp">
+      </div>
+
+    </div>
+
+    <hr class="arch-divider">
+
+    <div class="matrix-grid">
+      <div class="matrix-card"><img src="/A38knobs.webp"></div>
+      <div class="matrix-card"><img src="/A38all.webp"></div>
+      <div class="matrix-card"><img src="/A38knobs2.webp"></div>
+    </div>
+
+    <hr class="arch-divider">
+
+    <div class="gallery-masonry-grid">
+
+      <div class="gallery-canvas-main">
+        <div class="watermark-text">SWANSEA</div>
+        <h3>Swansea Collection is inspired by the tactile depth of industrial precision, reinterpreted for contemporary high-end interiors. 
+     Characterized by a meticulously knurled textured grip and a refined, balanced silhouette, 
+     Swansea brings a sense of industrial-inspired luxury and textured sophistication to modern cabinetry. 
+     The collection embodies a functional aesthetic that seamlessly blends high-grip performance with an elevated, modern visual appeal.</h3>
+      </div>
+
+      <div>
+        <div class="quote-card">“Knurled grip with a balanced silhouette”</div>
+        <img src="/A38.webp">
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<shared-footer></shared-footer>
+
+<script src="/search.js"></script>
+<script src="/footer.js"></script>
+<script src="/navbar.js"></script>
+<a href="/collection" class="floating-collection-btn">
+  <span>View More<br>Collection</span>
+</a>
+
+<button id="backToTop">↑</button>
+
+<script>
+
+/* ─── BACK TO TOP BUTTON ─── */
+const backToTop = document.getElementById("backToTop");
+
+if (backToTop) {
+  window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "flex" : "none";
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+</script>
+
+
+</body>
+</html>
