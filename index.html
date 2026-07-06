@@ -782,13 +782,16 @@ body, html{
 /* TOP TITLE */
 
 .fw-top-title{
-  font-size:clamp(70px,9vw,170px);
-  line-height:.9;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:-4px;
-  padding:20px 20px 10px;
-  white-space:nowrap;
+  font-size: clamp(70px, 9vw, 170px);
+  line-height: .9;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  font-family:var(--display) ;
+
+  /* MATCH HERO LEFT ALIGNMENT */
+  padding: 20px 0 10px 80px; /* adjust 80px to your container */
+  white-space: nowrap;
 }
 
 /* GRID */
@@ -2517,6 +2520,13 @@ body, html{
      CATALOGUE SECTIONS
 ====================================================== -->
 
+  <!-- HEADER -->
+  <div class="finish-header reveal">
+    <h2 class="section-heading">
+      COLLECTION
+    </h2>
+  </div>
+
 <section class="series-grid">
 
   <a href="collection.html" class="series-card">
@@ -2656,7 +2666,16 @@ body, html{
   <!-- ======================================================
      MODERN KITCHEN APPLICATION (EDITORIAL)
 ====================================================== -->
+
+
 <section class="hardware-bento">
+
+    <!-- HEADER -->
+  <div class="finish-header reveal">
+    <h2 class="section-heading">
+      Classic Hardware
+    </h2>
+  </div>
 
   <div class="bento-grid">
 
