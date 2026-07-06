@@ -659,80 +659,172 @@ padding-top: 100px;
 /* ======================================================
    PREMIUM STATS
 ====================================================== */
+/* ==============================
+   CABIMATE STATS SECTION
+================================ */
 
-.premium-stats {
-  width:100%;
-  padding:110px 6vw;
-  background:#f7f5f1;
-  overflow:hidden;
-}
+.cabimate-stats {
 
-
-.stats-inner {
-
-  max-width:1400px;
-  margin:auto;
-
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-
-  gap:60px;
+    background:#080808;
+    padding:110px 5%;
+    color:white;
 
 }
+
+
+.stats-container {
+
+    max-width:1500px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+}
+
 
 
 .stat-item {
 
-  flex:1;
-  text-align:center;
+    text-align:center;
+    padding:20px 50px;
+    position:relative;
 
 }
 
+
+/* vertical divider */
+
+.stat-item:not(:last-child)::after {
+
+    content:"";
+    position:absolute;
+
+    right:0;
+    top:30px;
+
+    width:1px;
+    height:160px;
+
+    background:rgba(255,255,255,.18);
+
+}
+
+
+
+/* NUMBER */
 
 .stat-number {
 
-  font-family:"Helvetica Neue", Arial, sans-serif;
+    font-family:"Times New Roman",serif;
 
-  font-size:clamp(70px,7vw,110px);
+    font-size:110px;
+    line-height:1;
 
-  font-weight:300;
+    font-weight:300;
 
-  letter-spacing:-4px;
+    letter-spacing:-4px;
 
-  line-height:1;
-
-  color:#111;
-
-}
-
-
-.stat-number sup {
-
-  font-size:0.45em;
-
-  top:-1.2em;
-
-  position:relative;
-
-  font-weight:400;
+    color:#d4af63;
 
 }
 
 
-.stat-label {
+.stat-number span {
 
-  margin-top:25px;
+    font-size:55px;
 
-  font-size:14px;
+    vertical-align:top;
 
-  letter-spacing:3px;
+    margin-left:8px;
 
-  text-transform:uppercase;
+}
 
-  color:#555;
 
-  line-height:1.8;
+
+/* GOLD LINE */
+
+.stat-line {
+
+    width:55px;
+    height:1px;
+
+    background:#d4af63;
+
+    margin:35px auto 28px;
+
+}
+
+
+
+/* TITLE */
+
+.stat-item h3 {
+
+    font-size:15px;
+
+    letter-spacing:5px;
+
+    font-weight:400;
+
+    color:#fff;
+
+    line-height:1.8;
+
+    margin-bottom:22px;
+
+}
+
+
+
+/* DESCRIPTION */
+
+.stat-item p {
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:rgba(255,255,255,.65);
+
+    letter-spacing:1px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+
+.stats-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.stat-item{
+
+    padding:50px 20px;
+
+}
+
+
+.stat-item:not(:last-child)::after{
+
+    display:none;
+
+}
+
+
+.stat-number{
+
+    font-size:80px;
+
+}
+
 
 }
 
@@ -2422,7 +2514,6 @@ padding-top: 100px;
 ====================================================== -->
 
 
-
   <!-- HEADER -->
   <div class="finish-header reveal">
     <h2 class="section-heading">
@@ -2696,49 +2787,77 @@ padding-top: 100px;
      PREMIUM STATS SECTION
 ====================================================== -->
 
-<section class="premium-stats reveal">
+<section class="cabimate-stats">
 
-  <div class="stats-inner">
+  <div class="stats-container">
 
-    <div class="stat-item">
+    <!-- ITEM -->
+    <div class="stat-item reveal">
+
       <div class="stat-number">
-        <span>13</span><sup>+</sup>
+        13<span>+</span>
       </div>
-      <div class="stat-label">
-        Premium Finishes
-      </div>
+
+      <div class="stat-line"></div>
+
+      <h3>
+        PREMIUM FINISHES
+      </h3>
+
+      <p>
+        Carefully curated finishes<br>
+        for timeless beauty and durability.
+      </p>
+
     </div>
 
 
-    <div class="stat-divider"></div>
+    <!-- ITEM -->
+    <div class="stat-item reveal">
 
-
-    <div class="stat-item">
       <div class="stat-number">
-        <span>20</span><sup>+</sup>
+        20<span>+</span>
       </div>
-      <div class="stat-label">
-        Handle & Knob<br>Profiles
-      </div>
+
+      <div class="stat-line"></div>
+
+      <h3>
+        HANDLE & KNOB<br>
+        PROFILES
+      </h3>
+
+      <p>
+        A wide range of designs<br>
+        crafted for every interior style.
+      </p>
+
     </div>
 
 
-    <div class="stat-divider"></div>
+    <!-- ITEM -->
+    <div class="stat-item reveal">
 
-
-    <div class="stat-item">
       <div class="stat-number">
-        <span>6</span>
+        6
       </div>
-      <div class="stat-label">
-        Size Options
-      </div>
+
+      <div class="stat-line"></div>
+
+      <h3>
+        SIZE OPTIONS
+      </h3>
+
+      <p>
+        Multiple dimensions<br>
+        for perfect installation.
+      </p>
+
     </div>
+
 
   </div>
 
 </section>
-
 
 
 
