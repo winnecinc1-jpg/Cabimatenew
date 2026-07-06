@@ -65,274 +65,158 @@
 
 
   /* HERO */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding: 0 60px;
-  }
-
- .hero-bg{
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,0.9) 0%,
-      rgba(0,0,0,0.75) 35%,
-      rgba(0,0,0,0.4) 65%,
-      rgba(0,0,0,0.15) 100%
-    ),
-    url('Newport.png');
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  z-index:0;
+/* RESET */
+body, html{
+  margin:0;
+  padding:0;
+  font-family: Arial, sans-serif;
+  scroll-behavior:smooth;
 }
 
-  .hero-line {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent 0%, var(--red) 30%, var(--red) 70%, transparent 100%);
-    animation: scanline 4s ease-in-out infinite;
-  }
-
-  @keyframes scanline {
-    0% { left: -3px; opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { left: 100%; opacity: 0; }
-  }
-
-  .hero-eyebrow {
-    font-size: 11px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: var(--red);
-    font-weight: 500;
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .hero-eyebrow::before {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 1px;
-    background: var(--red);
-  }
-
-  .hero-title {
-    font-family: var(--display);
-    font-size: clamp(72px, 10vw, 140px);
-    line-height: 0.9;
-    letter-spacing: -2px;
-    margin-bottom: 16px;
-    color: var(--white);
-  }
-  .hero-title .accent { color: var(--red); }
-  .hero-title .italic {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 300;
-    font-size: 0.65em;
-    color: var(--silver);
-    display: block;
-    margin-top: 8px;
-    letter-spacing: 2px;
-  }
-
-  .hero-body {
-    font-family: var(--serif);
-    font-size: 18px;
-    font-style: italic;
-    color: var(--muted);
-    max-width: 420px;
-    line-height: 1.8;
-    margin: 32px 0 48px;
-    font-weight: 300;
-  }
-
-  .hero-actions {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .btn-primary {
-    display: inline-block;
-    background: var(--red);
-    color: var(--white);
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 18px 40px;
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-    transition: background 0.3s;
-  }
-  .btn-primary::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.1);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-  .btn-primary:hover::after { transform: scaleX(1); }
-
-  .btn-ghost {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--silver);
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  .btn-ghost:hover { color: var(--white); }
-  .btn-ghost svg { transition: transform 0.3s; }
-  .btn-ghost:hover svg { transform: translateX(4px); }
-
-  .hero-visual {
-    position: absolute;
-    right: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 52%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
-    opacity: 0.85;
-  }
-
-
-  /*hero image*/
-  .hero-products{
-  position:absolute;
-  right:0;
-  top:50%;
-  transform:translateY(-50%);
-
-  width:55%;
-  height:720px;
-
-  display:flex;
-  gap:20px;
-  align-items:center;
-  justify-content:center;
-
-  z-index:5;
-}
-
-.product-image{
-  flex:1;
-  height:100%;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  border-radius:28px;
+/* BASE HERO */
+.hero-slider{
+  position:relative;
+  width:100%;
+  height:80vh;
   overflow:hidden;
 }
 
-.product-image img{
-  max-width:100%;
-  max-height:100%;
-
-  width:auto;
-  height:auto;
-
-  display:block;
+.hero-slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity 1s ease;
 }
 
-@media (max-width:980px){
+.hero-slide.active{
+  opacity:1;
+  visibility:visible;
+}
 
-  .hero-products{
-    position:relative;
-    width:100%;
-    height:auto;
+.hero-slide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
 
-    top:auto;
-    right:auto;
-    transform:none;
+.hero-slide::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.25)
+  );
+}
 
-    flex-direction:column;
-    gap:20px;
+.hero-content{
+  position:absolute;
+  left:8%;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:2;
+  max-width:650px;
+  color:#fff;
+}
 
-    margin-top:40px;
+.hero-content h1{
+  font-size:clamp(3rem,6vw,6rem);
+  line-height:1;
+  margin-bottom:20px;
+}
+
+.hero-content h1 span{
+  color:#d6b46b;
+}
+
+.hero-content p{
+  font-size:18px;
+  line-height:1.7;
+  margin-bottom:30px;
+  max-width:500px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 32px;
+  background:#d6b46b;
+  color:#111;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#fff;
+}
+
+/*heroarrow*/
+
+.hero-nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:56px;
+  height:56px;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  z-index:20;
+
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+
+  color:#fff;
+  font-size:20px;
+  transition:.3s ease;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-nav:hover{
+  background:rgba(255,255,255,.18);
+  transform:translateY(-50%) scale(1.08);
+}
+
+.hero-prev{
+  left:30px;
+}
+
+.hero-next{
+  right:30px;
+}
+
+/* Hide until hover for luxury feel */
+.hero-nav{
+  opacity:0;
+}
+
+.hero-slider:hover .hero-nav{
+  opacity:1;
+}
+
+@media(max-width:768px){
+
+  .hero-nav{
+    width:46px;
+    height:46px;
+    font-size:16px;
   }
 
-  .product-image{
-    height:auto;
+  .hero-prev{
+    left:15px;
   }
 
-  .product-image img{
-    width:100%;
-    height:auto;
+  .hero-next{
+    right:15px;
   }
 
 }
 
-  .handle-card {
-    background: var(--carbon);
-    border: 1px solid rgba(255,255,255,0.04);
-    aspect-ratio: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease;
-  }
-  .handle-card:hover {
-    background: var(--graphite);
-    border-color: rgba(192, 0, 30, 0.3);
-  }
-  .handle-card:hover .handle-label { opacity: 1; transform: translateY(0); }
-
-  .handle-svg {
-    width: 70%;
-    max-width: 180px;
-  }
-
-  .handle-label {
-    position: absolute;
-    bottom: 16px;
-    font-size: 9px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--red);
-    opacity: 0;
-    transform: translateY(6px);
-    transition: all 0.3s ease;
-    font-weight: 500;
-  }
-
-  .handle-card:nth-child(1) { animation: fadeSlide 0.8s 0.1s both; }
-  .handle-card:nth-child(2) { animation: fadeSlide 0.8s 0.2s both; }
-  .handle-card:nth-child(3) { animation: fadeSlide 0.8s 0.3s both; }
-  .handle-card:nth-child(4) { animation: fadeSlide 0.8s 0.4s both; }
-
-  @keyframes fadeSlide {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
 
   /* STRIP */
   .marquee-strip {
@@ -357,6 +241,215 @@
     to { transform: translateX(-50%); }
   }
 
+
+
+/*collection section-function*/
+.hardware-bento{
+  width:min(1600px,95%);
+  margin:100px auto;
+}
+
+.bento-grid{
+  display:grid;
+  gap:18px;
+
+  grid-template-columns:
+    2fr 1fr 1fr;
+
+  grid-template-areas:
+    "hero tall1 tall2"
+    "wide1 tall1 tall2"
+    "small1 small2 wide2"
+    "small3 small3 wide2";
+}
+
+.bento-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:28px;
+  min-height:220px;
+  text-decoration:none;
+}
+
+.bento-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.7s;
+}
+
+.bento-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.1),
+    transparent
+  );
+}
+
+.bento-content{
+  position:absolute;
+  left:30px;
+  bottom:30px;
+  z-index:2;
+  color:#fff;
+}
+
+.bento-content span{
+  font-size:.75rem;
+  letter-spacing:2px;
+}
+
+.bento-content h2{
+  font-size:3.2rem;
+  font-weight:300;
+  margin-top:8px;
+}
+
+.bento-content h3{
+  font-size:2rem;
+  font-weight:300;
+}
+
+.bento-content h4{
+  font-size:1.2rem;
+  font-weight:400;
+}
+
+.hero{grid-area:hero;}
+.tall:nth-of-type(2){grid-area:tall1;}
+.tall:nth-of-type(3){grid-area:tall2;}
+.wide:nth-of-type(4){grid-area:wide1;}
+.small:nth-of-type(5){grid-area:small1;}
+.small:nth-of-type(6){grid-area:small2;}
+.wide:nth-of-type(7){grid-area:wide2;}
+.small:nth-of-type(8){grid-area:small3;}
+
+.bento-card:hover img{
+  transform:scale(1.06);
+}
+
+@media(max-width:1000px){
+
+  .bento-grid{
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "hero hero"
+    "tall1 tall2"
+    "wide1 wide1"
+    "small1 small2"
+    "wide2 wide2"
+    "small3 small3";
+  }
+
+}
+
+@media(max-width:768px){
+
+  .bento-grid{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .hero{
+    min-height:450px;
+  }
+
+}
+
+  /*collection section*/
+
+.series-grid{
+  max-width:1400px;
+  margin:100px auto;
+  padding:0 30px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.series-card{
+  position:relative;
+  display:block;
+  overflow:hidden;
+  aspect-ratio:4/3;
+  text-decoration:none;
+  background:#f5f5f5;
+}
+
+.series-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.8s ease;
+}
+
+.series-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.65) 0%,
+    rgba(0,0,0,.25) 45%,
+    rgba(0,0,0,0) 100%
+  );
+}
+
+.series-content{
+  position:absolute;
+  left:30px;
+  right:30px;
+  bottom:28px;
+  color:#fff;
+  z-index:2;
+}
+
+.series-number{
+  display:inline-block;
+  font-size:.8rem;
+  letter-spacing:2px;
+  opacity:.8;
+  margin-bottom:10px;
+}
+
+.series-content h3{
+  margin:0;
+  font-size:2rem;
+  font-weight:300;
+  line-height:1.1;
+}
+
+.series-content p{
+  margin-top:12px;
+  font-size:.95rem;
+  letter-spacing:.5px;
+  opacity:.9;
+}
+
+.series-card:hover img{
+  transform:scale(1.08);
+}
+
+@media (max-width:991px){
+  .series-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width:640px){
+  .series-grid{
+    grid-template-columns:1fr;
+  }
+
+  .series-content h3{
+    font-size:1.6rem;
+  }
+}
+
+
   /* SECTION SHARED */
   section { padding: 120px 60px; }
 
@@ -375,7 +468,7 @@
     content: '';
     flex: 1;
     height: 1px;
-    background: rgba(192, 0, 30, 0.3);
+    background: #c0001e4d;
     max-width: 60px;
   }
 
@@ -2203,86 +2296,58 @@
 
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-line"></div>
+<section class="hero-slider">
 
-  <!-- LEFT CONTENT -->
-  <div style="position: relative; z-index: 2; max-width: 560px;">
-    
-    <div class="hero-eyebrow">
-      New 20 Series - Now Available
+  <!-- Slide 1 -->
+  <div class="hero-slide active">
+    <img src="A33handlesOK.webp" alt="Refined Handle Design">
+
+    <div class="hero-content">
+      <h1>REFINED<br><span>HANDLE DESIGN</span></h1>
+      <p>Minimal cabinet hardware for modern interiors.</p>
+      <a href="collection.html" class="btn">Visit Collection</a>
     </div>
-
-    <h1 class="hero-title">
-      CHARM<br>YOUR<br>
-      <span class="accent">CABINET</span>
-      <span class="italic">by Cabimate</span>
-    </h1>
-
-    <p class="hero-body">
-      Precision-engineered cabinet hardware for the modern interior. Where industrial strength meets refined elegance.
-    </p>
-
-    <div class="hero-actions">
-      <a href="collection.html" class="btn-primary">
-        Explore All Series
-      </a>
-
-    </div>
-
   </div>
 
-  <!-- IMAGE CAROUSEL -->
-<div class="hero-products">
+  <button class="hero-nav hero-prev">
+  &#10094;
+</button>
 
-  <div class="product-image">
-    <img src="tower.jpeg" alt="Cabimate Product">
+<button class="hero-nav hero-next">
+  &#10095;
+</button>
+
+  <!-- Slide 2 -->
+  <div class="hero-slide">
+    <img src="A34e.webp" alt="Modern Living Space">
+
+    <div class="hero-content">
+      <h1>MODERN<br><span>LIVING SPACE</span></h1>
+      <p>Designed to elevate every kitchen and wardrobe.</p>
+      <a href="handles.html" class="btn">Explore Handles</a>
+    </div>
   </div>
 
-  <div class="product-image">
-    <img src="tower2.jpeg" alt="Cabimate Product">
+  <!-- Slide 3 -->
+  <div class="hero-slide">
+    <img src="A36all2.webp" alt="Precision Crafted Detail">
+
+    <div class="hero-content">
+      <h1>PRECISION<br><span>CRAFTED DETAIL</span></h1>
+      <p>Engineered finishes built for durability and style.</p>
+      <a href="A38all2.webp" class="btn">View Knobs</a>
+    </div>
   </div>
 
-</div>
+  <!-- Slide 4 -->
+  <div class="hero-slide">
+    <img src="A39.webp" alt="Elevate Every Space">
 
-  <!-- STATS -->
-  <div class="hero-stats">
-
-    <div>
-      <div class="hero-stat-number">
-        13<span style="color:var(--red)">+</span>
-      </div>
-
-      <div class="hero-stat-label">
-        Finishes
-      </div>
+    <div class="hero-content">
+      <h1>ELEVATE<br><span>EVERY SPACE</span></h1>
+      <p>Cabimate brings luxury into everyday living.</p>
+      <a href="about.html" class="btn">Learn More</a>
     </div>
-
-    <div class="hero-divider"></div>
-
-    <div>
-      <div class="hero-stat-number">
-        20<span style="color:var(--red)">+</span>
-      </div>
-
-      <div class="hero-stat-label">
-        Profiles
-      </div>
-    </div>
-
-    <div class="hero-divider"></div>
-
-    <div>
-      <div class="hero-stat-number">
-        CA
-      </div>
-
-      <div class="hero-stat-label">
-        Made for Canada
-      </div>
-    </div>
-
   </div>
 
 </section>
@@ -2464,193 +2529,67 @@
      CATALOGUE SECTIONS
 ====================================================== -->
 
-<section class="catalogue-wrap">
+<section class="series-grid">
 
-  <!-- SECTION 1 -->
-  <div class="catalogue-block reveal">
-
-    <div class="catalogue-text">
-      <span class="catalogue-tag">01 · Fantacy</span>
-
-      <h2 class="catalogue-title">
-        SERIES 1<br>
-       Refined Urban
-      </h2>
-
-      <p class="catalogue-body">
--Davids
--Doncaster
--Newport
--Newry
-      </p>
-
-      <a href="collection.html" class="btn-primary">
-        Explore Collection
-      </a>
+  <a href="collection.html" class="series-card">
+    <img src="BelfastA25.webp" alt="Series 1">
+    <div class="series-overlay"></div>
+    <div class="series-content">
+      <span class="series-number">01</span>
+      <h3>Refined Urban</h3>
+      <p>Davids · Doncaster · Newport · Newry</p>
     </div>
+  </a>
 
-    <div class="catalogue-image">
-      <img src="series1.webp" alt="davids">
+  <a href="collection.html" class="series-card">
+    <img src="BristolA24.webp" alt="Series 2">
+    <div class="series-overlay"></div>
+    <div class="series-content">
+      <span class="series-number">02</span>
+      <h3>Industrial Heritage</h3>
+      <p>Nottingham · Dundee · Swansea</p>
     </div>
+  </a>
 
-  </div>
-
-  <!-- SECTION 2 -->
-  <div class="catalogue-block reverse reveal">
-
-    <div class="catalogue-image">
-      <img src="series2.webp" alt="">
+  <a href="collection.html" class="series-card">
+    <img src="A42.webp" alt="Series 3">
+    <div class="series-overlay"></div>
+    <div class="series-content">
+      <span class="series-number">03</span>
+      <h3>Timeless British</h3>
+      <p>Oxford · Bristol · Belfast</p>
     </div>
+  </a>
 
-    <div class="catalogue-text">
-      <span class="catalogue-tag">
-        02 · Elegant
-      </span>
-
-      <h2 class="catalogue-title">
-        SERIES 2<br>
-        Industrial Heritage
-      </h2>
-
-      <p class="catalogue-body">
--Nottingham
--Dundae
--Swansea
-
-      </p>
-
-      <a href="collection.html" class="btn-primary">
-        View Hardware
-      </a>
+  <a href="collection.html" class="series-card">
+    <img src="A37Glasgow-OK.webp" alt="Series 4">
+    <div class="series-overlay"></div>
+    <div class="series-content">
+      <span class="series-number">04</span>
+      <h3>Clean Contemporary</h3>
+      <p>Bradford · Leeds · Sheffield</p>
     </div>
+  </a>
 
-  </div>
-
-  <!-- SECTION 3 -->
-  <div class="catalogue-block reveal">
-
-    <div class="catalogue-text">
-      <span class="catalogue-tag">
-        03 · Premium Finishes
-      </span>
-
-      <h2 class="catalogue-title">
-       SERIES 3<br>
-        Timeless British
-      </h2>
-
-      <p class="catalogue-body">
--Oxford
--Bristol
--Belfast
-      </p>
-
-      <a href="collection.html" class="btn-primary">
-        Explore Finishes
-      </a>
+  <a href="collection.html" class="series-card">
+    <img src="A35d.webp" alt="Series 5">
+    <div class="series-overlay"></div>
+    <div class="series-content">
+      <span class="series-number">05</span>
+      <h3>Metropolitan Luxe</h3>
+      <p>Birmingham · Guildford · Glasgow · York</p>
     </div>
+  </a>
 
-    <div class="catalogue-image">
-      <img src="series3.webp" alt="">
+  <a href="collection.html" class="series-card">
+    <img src="A36handles.webp" alt="Series 6">
+    <div class="series-overlay"></div>
+    <div class="series-content">
+      <span class="series-number">06</span>
+      <h3>Modern Elegance</h3>
+      <p>Stirling · Norwich</p>
     </div>
-
-  </div>
-
-  <!-- SECTION 4 -->
-  <div class="catalogue-block reverse reveal">
-
-    <div class="catalogue-image">
-      <img src="series4.webp" alt="">
-    </div>
-
-    <div class="catalogue-text">
-      <span class="catalogue-tag">
-        04 · Design Language
-      </span>
-
-      <h2 class="catalogue-title">
-        SERIES 4<br>
-        Clean 
-        Contemporary
-      </h2>
-
-      <p class="catalogue-body">
-   -Bradford
-   -Leeds
-   -Sheffield
-      </p>
-
-      <a href="collection.html" class="btn-primary">
-        Discover More
-      </a>
-    </div>
-  </div>
-
-  <!-- SECTION 5 -->
-  <div class="catalogue-block reveal">
-
-    
-
-    <div class="catalogue-text">
-      <span class="catalogue-tag">
-        05 · Premium Finishes
-      </span>
-
-      <h2 class="catalogue-title">
-        SERIES 5 <br>
-        Metropolitan Luxe
-      </h2>
-
-      <p class="catalogue-body">
--Briminghan
--Guildford
--Glasgow
--York
-
-      </p>
-
-      <a href="#finishes" class="btn-primary">
-        Explore Finishes
-      </a>
-    </div>
-
-    <div class="catalogue-image">
-      <img src="collection.html" alt="">
-    </div>
-    <div class="catalogue-image">
-      <img src="series5.webp" alt="">
-    </div>
-  </div>
-
-    <!-- SECTION 6 -->
-  <div class="catalogue-block reverse reveal">
-
-    <div class="catalogue-image">
-      <img src="A31sets.webp" alt="">
-    </div>
-
-    <div class="catalogue-text">
-      <span class="catalogue-tag">
-        06 · Design Language
-      </span>
-
-      <h2 class="catalogue-title">
-        SERIES 6<br>
-        Modern Elegance
-      </h2>
-
-      <p class="catalogue-body">
-   -Stirling
-   -Norwich
-   -Norwich
-      </p>
-
-      <a href="collection.html" class="btn-primary">
-        Discover More
-      </a>
-    </div>
-
-  </div>
+  </a>
 
 </section>
 <!-- COLLECTION BANNER -->
@@ -2734,135 +2673,77 @@
   <!-- ======================================================
      MODERN KITCHEN APPLICATION (EDITORIAL)
 ====================================================== -->
+<section class="hardware-bento">
 
-<section class="kitchen-editorial reveal">
+  <div class="bento-grid">
 
-  <!-- BIG TYPO -->
-  <div class="kitchen-bg-text">
-    KITCHEN
-  </div>
-
-  <div class="kitchen-layout">
-
-    <!-- LEFT TEXT -->
-    <div class="kitchen-copy">
-
-      <span class="kitchen-tag">
-        Designed For Everyday Living
-      </span>
-
-      <h2 class="kitchen-title">
-        Refined Cabinet Hardware:<br>
-         The Art of Detail
-      </h2>
-
-      <p class="kitchen-body">
-       CABIMATE hardware is the heartbeat of your home’s design. 
-       Whether accenting high-contrast interiors or warm wood, 
-       the right knobs, pulls and handles define your space’s visual rhythm.
-
-      </p>
-
-      <div class="kitchen-small-caption">
-        Crafted for all pantry systems & modern cabinetry.
+    <!-- HERO -->
+    <a href="collection.html" class="bento-card hero">
+      <img src="A21leedsa.webp" alt="">
+      <div class="bento-content">
+        <span>PREMIUM COLLECTION</span>
+        <h2>Door Handles</h2>
+        <p>Modern, classic and architectural designs.</p>
       </div>
+    </a>
 
-    </div>
-
-    <!-- LARGE IMAGE -->
-    <div class="kitchen-image-wrap">
-
-      <img src="A28knobs.webp" alt="Modern Kitchen">
-
-      <!-- FLOATING HANDLE CARD -->
-      <div class="floating-handle-card">
-
-        <div class="floating-card-tag">
-          FEATURED LOOKS
-        </div>
-
-        <img src="OXFORDknobs.webp" alt="Cabimate Handle">
-
-        <div class="floating-card-title">
-          6 COLLECTIONS
-        </div>
-
-        <div class="floating-card-code">
-          20 Series
-        </div>
-
+    <!-- TALL -->
+    <a href="collection.html" class="bento-card tall">
+      <img src="A281.webp" alt="">
+      <div class="bento-content">
+        <h3>Cabinet Knobs</h3>
       </div>
+    </a>
 
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ======================================================
-     SHOWER GALLERY SECTION
-====================================================== -->
-
-<section class="shower-gallery reveal">
-
-  <!-- LEFT TITLE -->
-  <div class="gallery-intro">
-
-    <span class="gallery-label">
-      Our Premium Collection: <br/>
-      Where Form Meets Function
-    </span>
-
-    <h2 class="gallery-title">
-      CABINET PULLS<br>
-      and KNOBS
-    </h2>
-
-    <p class="gallery-text">
-      Refined silhouettes, premium finishes
-      and tactile details designed to elevate
-      contemporary area into immersive
-      spaces.
-    </p>
-
-  </div>
-
-  <!-- RIGHT GALLERY -->
-  <div class="gallery-grid">
-
-    <!-- LARGE -->
-    <div class="gallery-item large">
-      <img src="A40OK.webp" alt="Luxury Shower">
-
-      <div class="gallery-card-info">
-        <span>FEATURED</span>
-        Doncaster
+    <!-- TALL -->
+    <a href="collection.html" class="bento-card tall">
+      <img src="A40c.webp" alt="">
+      <div class="bento-content">
+        <h3>Cabinet Pulls</h3>
       </div>
-    </div>
-
-    <!-- SMALL -->
-    <div class="gallery-item small">
-      <img src="leedsA21.webp" alt="">
-    </div>
-
-    <!-- VERTICAL -->
-    <div class="gallery-item tall">
-      <img src="SheffieldA22.webp" alt="">
-
-      <div class="gallery-card-info">
-        <span>NEW</span>
-        Sheffield
-      </div>
-    </div>
+    </a>
 
     <!-- WIDE -->
-    <div class="gallery-item wide">
-      <img src="OXFORD.webp" alt="">
-    </div>
+    <a href="collection.html" class="bento-card wide">
+      <img src="A35e.webp" alt="">
+      <div class="bento-content">
+        <h3>Sliding Door Kits</h3>
+      </div>
+    </a>
+
+    <!-- SMALL -->
+    <a href="collection.html" class="bento-card small">
+      <img src="A40OK.webp" alt="">
+      <div class="bento-content">
+        <h4>Hinges</h4>
+      </div>
+    </a>
+
+    <!-- SMALL -->
+    <a href="collection.html" class="bento-card small">
+      <img src="A34c.webp" alt="">
+      <div class="bento-content">
+        <h4>Hooks</h4>
+      </div>
+    </a>
+
+    <!-- WIDE -->
+    <a href="collection.html" class="bento-card wide">
+      <img src="A35e.webp" alt="">
+      <div class="bento-content">
+        <h3>Bathroom Accessories</h3>
+      </div>
+    </a>
+
+    <!-- SMALL -->
+    <a href="collection.html" class="bento-card small">
+      <img src="A42MBKOK.webp" alt="">
+      <div class="bento-content">
+        <h4>New Arrivals</h4>
+      </div>
+    </a>
 
   </div>
-
-  
 
 </section>
 
@@ -3050,6 +2931,59 @@ window.addEventListener(
   zoomScroll
 );
 
+</script>
+
+/*hero*/
+
+<script>
+const slider = document.querySelector('.hero-slider');
+const slides = document.querySelectorAll('.hero-slide');
+const nextBtn = document.querySelector('.hero-next');
+const prevBtn = document.querySelector('.hero-prev');
+
+let currentSlide = 0;
+let autoPlay;
+
+function showSlide(index){
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[index].classList.add('active');
+}
+
+function nextSlide(){
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide(){
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+function startSlider(){
+  autoPlay = setInterval(nextSlide, 5000);
+}
+
+function stopSlider(){
+  clearInterval(autoPlay);
+}
+
+showSlide(0);
+startSlider();
+
+slider.addEventListener('mouseenter', stopSlider);
+slider.addEventListener('mouseleave', startSlider);
+
+nextBtn.addEventListener('click', () => {
+  stopSlider();
+  nextSlide();
+  startSlider();
+});
+
+prevBtn.addEventListener('click', () => {
+  stopSlider();
+  prevSlide();
+  startSlider();
+});
 </script>
 
 <!-- PUT THE SCRIPT TAG HERE (At the very bottom, right before the body closes) -->
