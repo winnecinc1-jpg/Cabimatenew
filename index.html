@@ -2833,6 +2833,193 @@ body, html{
 
 }
 
+
+/* BRAND SECTION */
+
+.brand-section{
+
+    background:#050505;
+    padding:100px 5%;
+    overflow:hidden;
+
+}
+
+
+.brand-header{
+
+    text-align:center;
+    margin-bottom:60px;
+    color:white;
+
+}
+
+
+.brand-header span{
+
+    letter-spacing:4px;
+    font-size:12px;
+    color:#b79b55;
+
+}
+
+
+.brand-header h2{
+
+    font-size:48px;
+    font-weight:300;
+    margin:15px 0;
+
+}
+
+
+.brand-header p{
+
+    color:#999;
+    max-width:600px;
+    margin:auto;
+    line-height:1.7;
+
+}
+
+
+
+/* CAROUSEL */
+
+
+.brand-carousel{
+
+    width:100%;
+    overflow:hidden;
+
+}
+
+
+.brand-track{
+
+    display:flex;
+    gap:25px;
+    width:max-content;
+
+    animation:
+    brandMove 25s linear infinite;
+
+}
+
+
+.brand-card{
+
+    width:260px;
+    height:150px;
+
+    background:#111;
+
+    border:1px solid #222;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-direction:column;
+
+    transition:.4s;
+
+}
+
+
+.brand-card img{
+
+    max-width:140px;
+    max-height:70px;
+
+    object-fit:contain;
+
+    filter:grayscale(100%);
+    opacity:.8;
+
+    transition:.4s;
+
+}
+
+
+.brand-card:hover{
+
+    border-color:#b79b55;
+    transform:translateY(-8px);
+
+}
+
+
+.brand-card:hover img{
+
+    filter:none;
+    opacity:1;
+
+}
+
+
+
+/* YOUR BRAND FEATURE */
+
+
+.brand-card.featured{
+
+    border:1px solid #b79b55;
+
+}
+
+
+.brand-card.featured h3{
+
+    color:#b79b55;
+    margin-top:15px;
+    letter-spacing:3px;
+
+}
+
+
+
+
+@keyframes brandMove{
+
+
+from{
+
+transform:translateX(0);
+
+}
+
+to{
+
+transform:translateX(-50%);
+
+}
+
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.brand-header h2{
+
+font-size:34px;
+
+}
+
+
+.brand-card{
+
+width:200px;
+height:120px;
+
+}
+
+
+}
+
 </style>
 
 <meta property="og:title" content="Cabimate Hardware" />
@@ -3561,6 +3748,73 @@ Preferred rates on every product, applied automatically at checkout.
 
 </section>
 
+
+<!-- BRAND CAROUSEL SECTION -->
+
+<section class="brand-section">
+
+    <div class="brand-header">
+        <span>PARTNERSHIP</span>
+        <h2>Our Brands</h2>
+        <p>
+            Inspired by precision, design and craftsmanship.
+            Discover our curated hardware collections.
+        </p>
+    </div>
+
+
+    <div class="brand-carousel">
+
+        <div class="brand-track">
+
+            <!-- YOUR BRAND -->
+            <div class="brand-card featured">
+                <img src="images/winnec-logo.png" alt="Winnec">
+                <h3>Winnec</h3>
+            </div>
+
+
+            <div class="brand-card">
+                <img src="images/pomelli-logo.png" alt="Pomelli Designs">
+            </div>
+
+
+            <div class="brand-card">
+                <img src="images/di-lusso.png" alt="Di Lusso">
+            </div>
+
+
+            <div class="brand-card">
+                <img src="images/blue-lemon.png" alt="Blue Lemon">
+            </div>
+
+
+            <div class="brand-card">
+                <img src="images/salice.png" alt="Salice">
+            </div>
+
+
+            <!-- duplicate for infinite loop -->
+
+            <div class="brand-card featured">
+                <img src="images/winnec-logo.png">
+            </div>
+
+            <div class="brand-card">
+                <img src="images/pomelli-logo.png">
+            </div>
+
+
+            <div class="brand-card">
+                <img src="images/di-lusso.png">
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
 
   <!-- BOTTOM TICKER -->
   <div class="fw-bottom-bar">
