@@ -2437,6 +2437,401 @@ body, html{
   transform: scale(0.95);
 }
 
+/* ======================================================
+   GOOGLE REVIEW + PRODUCT SHOWCASE
+====================================================== */
+
+.cabimate-review-showcase {
+    width:100%;
+    padding:100px 5%;
+    background:#0b0b0b;
+    overflow:hidden;
+}
+
+
+.review-showcase-inner {
+
+    max-width:1400px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:40% 60%;
+    align-items:center;
+
+    gap:60px;
+
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.review-content {
+
+    position:relative;
+
+}
+
+
+.review-label {
+
+    display:inline-block;
+
+    font-size:12px;
+    letter-spacing:3px;
+
+    color:#c8a96a;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.review-content h2 {
+
+    color:#ffffff;
+
+    font-size:48px;
+    line-height:1.15;
+
+    font-weight:500;
+
+    margin:0 0 30px;
+
+}
+
+
+
+.google-rating {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:35px;
+
+    color:#aaa;
+
+    font-size:14px;
+
+}
+
+
+
+.google-stars {
+
+    color:#c8a96a;
+
+    letter-spacing:3px;
+
+    font-size:20px;
+
+}
+
+
+
+/* =========================
+   REVIEW CARD
+========================= */
+
+
+.review-slider {
+
+    position:relative;
+
+    min-height:230px;
+
+}
+
+
+
+.review-item {
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    transform:translateX(40px);
+
+    transition:.6s ease;
+
+    padding:40px;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.08),
+    rgba(255,255,255,.02)
+    );
+
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:24px;
+
+}
+
+
+.review-item.active {
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+
+.quote-mark {
+
+    font-size:70px;
+
+    line-height:.5;
+
+    color:#c8a96a;
+
+    font-family:serif;
+
+}
+
+
+
+.review-item p {
+
+    color:#ddd;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin:25px 0;
+
+}
+
+
+
+.review-person {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+}
+
+
+
+.review-person strong {
+
+    color:#fff;
+
+    font-size:16px;
+
+}
+
+
+
+.review-person span {
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+
+
+/* DOTS */
+
+
+.review-dots {
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:30px;
+
+}
+
+
+.review-dots span {
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#555;
+
+    transition:.3s;
+
+}
+
+
+.review-dots span.active {
+
+    width:28px;
+
+    border-radius:10px;
+
+    background:#c8a96a;
+
+}
+
+
+
+
+.google-review-btn {
+
+    display:inline-flex;
+
+    margin-top:35px;
+
+    padding:14px 30px;
+
+    border:1px solid #c8a96a;
+
+    color:#c8a96a;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+
+}
+
+
+
+.google-review-btn:hover {
+
+    background:#c8a96a;
+
+    color:#000;
+
+}
+
+
+
+/* =========================
+   PRODUCT SIDE
+========================= */
+
+
+.product-showcase {
+
+    position:relative;
+
+    height:600px;
+
+}
+
+
+
+.product-slide {
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    transform:scale(.96);
+
+    transition:1s ease;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.product-slide.active {
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+
+
+.product-slide img {
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    filter:drop-shadow(
+    0 30px 50px rgba(0,0,0,.6)
+    );
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:900px){
+
+
+.review-showcase-inner {
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+
+
+.review-content h2 {
+
+    font-size:36px;
+
+}
+
+
+
+.product-showcase {
+
+    height:400px;
+
+}
+
+
+.review-slider {
+
+    min-height:260px;
+
+}
+
+
+
+}
 
 </style>
 
@@ -2854,17 +3249,17 @@ body, html{
       <!-- CONTENT -->
       <div class="fw-content">
         <div class="fw-tag">
-          Kitchen & Shower
+           Shop at Exclusive Prices
         </div>
 
         <h2>
-          HARDWARE<br>
-          REDEFINED
+          Join the Trade Program<br>
         </h2>
 
         <p>
-          Premium cabinet & bath hardware
-          designed for modern interiors.
+          
+Exclusive trade pricing
+Preferred rates on every product, applied automatically at checkout.
         </p>
 
         <a href="collection.html" class="fw-btn">
@@ -2977,7 +3372,194 @@ body, html{
 
 </section>
 
+<!-- ======================================================
+     GOOGLE REVIEW + PRODUCT SHOWCASE SECTION
+====================================================== -->
 
+<section class="cabimate-review-showcase">
+
+    <div class="review-showcase-inner">
+
+
+        <!-- LEFT : GOOGLE REVIEWS -->
+        <div class="review-content">
+
+            <span class="review-label">
+                GOOGLE REVIEWS
+            </span>
+
+
+            <h2>
+                Trusted by Homeowners,
+                Designers & Builders
+            </h2>
+
+
+            <div class="google-rating">
+
+                <span class="google-stars">
+                    ★★★★★
+                </span>
+
+                <span>
+                    4.9 / 5 Based on Customer Reviews
+                </span>
+
+            </div>
+
+
+            <!-- REVIEW CAROUSEL -->
+
+            <div class="review-slider">
+
+
+                <div class="review-item active">
+
+                    <div class="quote-mark">
+                        "
+                    </div>
+
+                    <p>
+                        The quality and finish are outstanding.
+                        These handles completely elevated our kitchen design.
+                    </p>
+
+
+                    <div class="review-person">
+
+                        <strong>
+                            Michael T.
+                        </strong>
+
+                        <span>
+                            Interior Designer
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="review-item">
+
+                    <div class="quote-mark">
+                        "
+                    </div>
+
+                    <p>
+                        Beautiful craftsmanship and excellent service.
+                        Premium hardware with amazing attention to detail.
+                    </p>
+
+
+                    <div class="review-person">
+
+                        <strong>
+                            Sarah W.
+                        </strong>
+
+                        <span>
+                            Homeowner
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="review-item">
+
+                    <div class="quote-mark">
+                        "
+                    </div>
+
+                    <p>
+                        Solid construction, elegant finishes,
+                        and perfect for our custom cabinetry projects.
+                    </p>
+
+
+                    <div class="review-person">
+
+                        <strong>
+                            David C.
+                        </strong>
+
+                        <span>
+                            Cabinet Builder
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="review-dots">
+
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+
+            <a href="#" class="google-review-btn">
+                View All Google Reviews →
+            </a>
+
+
+        </div>
+
+
+
+        <!-- RIGHT : PRODUCT IMAGE CAROUSEL -->
+
+        <div class="product-showcase">
+
+
+            <div class="product-slide active">
+
+                <img 
+                src="A26a.webp"
+                alt="Premium Cabinet Handle">
+
+            </div>
+
+
+
+            <div class="product-slide">
+
+                <img 
+                src="A26c.webp"
+                alt="Luxury Cabinet Hardware">
+
+            </div>
+
+
+
+            <div class="product-slide">
+
+                <img 
+                src="A28series.webp"
+                alt="Modern Cabinet Knob">
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+</section>
 
 
   <!-- BOTTOM TICKER -->
@@ -3214,6 +3796,97 @@ prevBtn.addEventListener('click', () => {
   prevSlide();
   startSlider();
 });
+</script>
+
+<script>
+/* ======================================================
+   REVIEW + PRODUCT SYNCHRONIZED CAROUSEL
+====================================================== */
+
+
+document.addEventListener(
+"DOMContentLoaded",
+()=>{
+
+
+const reviews =
+document.querySelectorAll(
+".review-item"
+);
+
+
+const products =
+document.querySelectorAll(
+".product-slide"
+);
+
+
+const dots =
+document.querySelectorAll(
+".review-dots span"
+);
+
+
+
+let current = 0;
+
+
+
+function changeSlide(){
+
+
+    reviews.forEach(item=>{
+        item.classList.remove("active");
+    });
+
+
+    products.forEach(item=>{
+        item.classList.remove("active");
+    });
+
+
+    dots.forEach(dot=>{
+        dot.classList.remove("active");
+    });
+
+
+
+    reviews[current]
+    .classList.add("active");
+
+
+    products[current]
+    .classList.add("active");
+
+
+    dots[current]
+    .classList.add("active");
+
+
+
+    current++;
+
+
+    if(current >= reviews.length){
+
+        current = 0;
+
+    }
+
+
+}
+
+
+
+setInterval(
+changeSlide,
+5000
+);
+
+
+
+});
+
 </script>
 
 <!-- PUT THE SCRIPT TAG HERE (At the very bottom, right before the body closes) -->
