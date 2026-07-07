@@ -354,12 +354,14 @@ body, html{
   /*collection section*/
 
 .series-grid{
-  max-width:1400px;
-  margin:25px auto;
-  padding:0 30px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
+    width:100%;
+    max-width:none;
+    margin:25px auto 0;
+    padding:0 5%;      /* same as Bento */
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;          /* same gap as Bento */
+    box-sizing:border-box;
 }
 
 .series-card{
@@ -465,13 +467,13 @@ body, html{
   }
 
 .section-heading{
-  font-family: var(--display);
-  font-size: clamp(42px, 6vw, 80px);
-  line-height: 1;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-padding-top: 100px;
-  padding-left: 8%;
+    font-family:var(--display);
+    font-size:clamp(42px,6vw,80px);
+    line-height:1;
+    letter-spacing:1px;
+    margin-bottom:5px;
+    padding-top:100px;
+    padding-left:5%;   /* was 8% */
 }
 
   .section-sub {
