@@ -1,14 +1,9 @@
-(function () {
-  const s1 = document.createElement("script");
-  s1.async = true;
-  s1.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX";
-  document.head.appendChild(s1);
+// analytics.js
 
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){dataLayer.push(arguments);};
+window.dataLayer = window.dataLayer || [];
+window.gtag = function () {
+  dataLayer.push(arguments);
+};
 
-  s1.onload = function () {
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  };
-})();
+gtag('js', new Date());
+gtag('config', 'G-4N3LN3MG1M');
