@@ -13,16 +13,7 @@ class SharedNavbar extends HTMLElement {
   <li><a href="/contact">Contact</a></li>
 </ul>
 
-<div class="nav-search">
-  <input
-    type="text"
-    id="searchInput"
-    placeholder="Search SKU or Product"
-    autocomplete="off"
-  >
 
-  <div id="searchResults" class="search-results"></div>
-</div>
 
 <a href="/contact" class="nav-cta">
   Shop with Trade Price
