@@ -25,7 +25,7 @@
 
   background: #111;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
 
   outline: none;
 
@@ -279,7 +279,7 @@
 }
 
 .nav-links a{
-  font-size:11px;
+  font-size:15px;
   letter-spacing:3px;
   text-transform:uppercase;
   color:#999;
@@ -295,10 +295,10 @@
 /* CTA */
 
 .nav-cta{
-  font-size:11px;
+  font-size:13px;
   letter-spacing:2px;
   text-transform:uppercase;
-  color:#111;
+  color:#ffffff;
   background:#a13d2d;
   padding:10px 24px;
   text-decoration:none;
