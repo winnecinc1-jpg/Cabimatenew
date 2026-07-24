@@ -19,7 +19,7 @@
   gtag('config', 'G-4N3LN3MG1M');
 </script>
 
-<script src="./shopify-products.js"></script>
+
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -3080,90 +3080,144 @@ height:200px;
     background:#000;
 }
 
-/*shopify*/
 
-.shopify-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 1400px;
-    margin: auto;
+
+
+.product-heading{
+text-align:center;
+margin-bottom:60px;
 }
 
-.shopify-card {
-    font-family: Arial, sans-serif;
-    text-align: left;
+.product-heading span{
+color:#a13d2d;
+font-weight:600;
+letter-spacing:2px;
 }
 
-.shopify-image {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    background: #f7f7f7;
+.product-heading h2{
+font-size:48px;
+margin:15px 0;
+font-weight:600;
 }
 
-.shopify-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: .3s;
+.product-heading p{
+max-width:650px;
+margin:auto;
+color:#666;
+font-size:18px;
+line-height:1.8;
 }
 
-.shopify-image img:hover {
-    transform: scale(1.05);
+.featured-products{
+    max-width:1400px;
+    margin:80px auto;
+    padding:0 40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
 }
 
-
-.shopify-title {
-    margin-top:15px;
-    font-size:16px;
-    color:#222;
-}
-
-.shopify-price {
-    margin-top:8px;
-    font-size:15px;
-    font-weight:600;
-}
-
-.old-price {
-    color:#999;
-    text-decoration:line-through;
-    margin-left:8px;
-}
-
-
-.swatches {
-    display:flex;
-    gap:8px;
-    margin-top:12px;
-}
-
-.swatch {
-    width:18px;
-    height:18px;
-    border-radius:50%;
-    border:1px solid #ccc;
-}
-
-
-@media(max-width:900px){
-
-.shopify-grid{
+@media(max-width:991px){
+.featured-products{
 grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+.featured-products{
+grid-template-columns:1fr;
+padding:0 20px;
+}
+}
+
+/* Shopify Products 3 in one row */
+#product-component-1784921737625,
+#product-component-1784921782081,
+#product-component-1784921811969 {
+    width: calc(33.333% - 20px);
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 40px;
+}
+
+/* Product container */
+.shopify-buy__product {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+/* Parent wrapper alignment */
+#product-component-1784921737625 ~ #product-component-1784921782081,
+#product-component-1784921782081 ~ #product-component-1784921811969 {
+    display: inline-block;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+
+    #product-component-1784921737625,
+    #product-component-1784921782081,
+    #product-component-1784921811969 {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+
+}
+
+
+
+
+.shopify-product-row{
+
+max-width:1200px;
+
+margin:0 auto;
+
+display:flex;
+
+justify-content:center;
+
 gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.shopify-product-row > div{
+
+width:calc(33.333% - 20px);
+
+}
+
+
+
+.shopify-buy__product{
+
+width:100% !important;
+
+max-width:100% !important;
+
+margin:0 !important;
+
+}
+
+
+
+@media(max-width:768px){
+
+.shopify-product-row > div{
+
+width:100%;
+
 }
 
 }
 
 
-@media(max-width:500px){
 
-.shopify-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
 
 
 </style>
@@ -3274,10 +3328,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-
-<div id="shopify-products"></div>
-
-<script src="shopify-products.js"></script>
 
   <!-- HEADER -->
   <div class="finish-header reveal">
@@ -3536,6 +3586,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </section>
 
+
+<!--shopify product-->
+<section class="product-heading">
+
+    <span>SHOP NOW</span>
+
+    <h2>Cabinet Hardware</h2>
+
+    <p>
+        Discover beautifully crafted cabinet accessories designed
+        to elevate every kitchen, pantry, and wardrobe.
+    </p>
+
+</section>
+
+<!-- PRODUCT CONTAINER -->
+<div class="shopify-product-row">
+
+    <div id="product-1"></div>
+    <div id="product-2"></div>
+    <div id="product-3"></div>
+
+</div>
 <!-- COLLECTION BANNER -->
 <!-- ======================================================
      FALL / WINTER STYLE COLLECTION HERO
@@ -3544,9 +3617,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="fw-hero">
 
   <!-- TOP TITLE -->
-  <div class="fw-top-title">
-    NEW 
-  </div>
 
   <!-- MAIN GRID -->
   <div class="fw-grid">
@@ -4356,13 +4426,208 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 
+<script>
+
+(function () {
+
+var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+
+
+function loadScript(){
+
+var script = document.createElement('script');
+
+script.async = true;
+
+script.src = scriptURL;
+
+document.head.appendChild(script);
+
+script.onload = ShopifyBuyInit;
+
+}
+
+
+
+function ShopifyBuyInit(){
+
+
+var client = ShopifyBuy.buildClient({
+
+domain:'winnecinc.myshopify.com',
+
+storefrontAccessToken:'7c734f042447288daa601fdedb8718df'
+
+});
+
+
+
+ShopifyBuy.UI.onReady(client).then(function(ui){
+
+
+
+var products = [
+
+
+{
+id:'8980306952346',
+node:'product-1'
+},
+
+
+{
+id:'9006987280538',
+node:'product-2'
+},
+
+
+{
+id:'9007007957146',
+node:'product-3'
+}
+
+
+];
+
+
+
+products.forEach(function(product){
+
+
+
+ui.createComponent('product',{
+
+
+id:product.id,
+
+node:document.getElementById(product.node),
+
+moneyFormat:'%24%7B%7Bamount%7D%7D',
+
+
+options:{
+
+
+product:{
+
+
+styles:{
+
+
+product:{
+
+"margin-bottom":"50px"
+
+},
+
+
+button:{
+
+"background-color":"#a13d2d",
+
+":hover":{
+
+"background-color":"#913729"
+
+},
+
+"border-radius":"0px",
+
+"font-size":"13px",
+
+"padding-left":"87px",
+
+"padding-right":"87px",
+
+"padding-top":"14.5px",
+
+"padding-bottom":"14.5px"
+
+},
+
+
+title:{
+
+"color":"#ffffff"
+
+},
+
+
+price:{
+
+"font-size":"18px",
+
+"color":"#ffffff"
+
+}
+
+
+
+},
+
+
+contents:{
+
+img:false,
+
+imgWithCarousel:true
+
+}
+
+
+}
+
+
+}
+
+
+});
+
+
+});
+
+
+
+});
+
+
+}
+
+
+
+if(window.ShopifyBuy){
+
+if(window.ShopifyBuy.UI){
+
+ShopifyBuyInit();
+
+}else{
+
+loadScript();
+
+}
+
+}else{
+
+loadScript();
+
+}
+
+
+
+})();
+
+</script>
+
+
+
 <!-- PUT THE SCRIPT TAG HERE (At the very bottom, right before the body closes) -->
   <script src="navbar.js"></script>
-  <script src="/search.js"></script>
 
   <shared-footer></shared-footer>
 
 <script src="footer.js"></script>
+
 
 </body>
 
