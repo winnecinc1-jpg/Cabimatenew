@@ -19,6 +19,8 @@
   gtag('config', 'G-4N3LN3MG1M');
 </script>
 
+<script src="./shopify-products.js"></script>
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -659,6 +661,7 @@ body, html{
   display:none;
 }
 
+
 .finish-card{
   flex:0 0 320px;
   scroll-snap-align:center;
@@ -672,6 +675,7 @@ body, html{
     transform .4s ease,
     border-color .4s ease,
     box-shadow .4s ease;
+    
 }
 
 .finish-card:hover{
@@ -3052,6 +3056,116 @@ height:200px;
 
 }
 
+
+.finish-nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:30px;
+}
+
+.nav-dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#d0d0d0;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+.nav-dot.active{
+    width:28px;
+    border-radius:20px;
+    background:#000;
+}
+
+/*shopify*/
+
+.shopify-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.shopify-card {
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.shopify-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+.shopify-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.shopify-image img:hover {
+    transform: scale(1.05);
+}
+
+
+.shopify-title {
+    margin-top:15px;
+    font-size:16px;
+    color:#222;
+}
+
+.shopify-price {
+    margin-top:8px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.old-price {
+    color:#999;
+    text-decoration:line-through;
+    margin-left:8px;
+}
+
+
+.swatches {
+    display:flex;
+    gap:8px;
+    margin-top:12px;
+}
+
+.swatch {
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    border:1px solid #ccc;
+}
+
+
+@media(max-width:900px){
+
+.shopify-grid{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+}
+
+
+@media(max-width:500px){
+
+.shopify-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
 </style>
 
 <meta property="og:title" content="Cabimate Hardware" />
@@ -3160,10 +3274,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<!-- ======================================================
-     FINISHES (LUXURY CARD STYLE)
-====================================================== -->
 
+<div id="shopify-products"></div>
+
+<script src="shopify-products.js"></script>
 
   <!-- HEADER -->
   <div class="finish-header reveal">
@@ -4194,6 +4308,51 @@ changeSlide,
 
 });
 
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".finish-card");
+    const carousel = document.querySelector(".finish-carousel");
+
+    let current = 0;
+
+    // Show selected card
+    function showCard(index){
+        current = index;
+
+        cards.forEach((card,i)=>{
+            card.classList.toggle("active", i === index);
+        });
+
+        dots.forEach((dot,i)=>{
+            dot.classList.toggle("active", i === index);
+        });
+    }
+
+    // Create navigation
+    const nav = document.createElement("div");
+    nav.className = "finish-nav";
+
+    cards.forEach((card,index)=>{
+        const dot = document.createElement("span");
+        dot.className = "nav-dot";
+
+        dot.addEventListener("click",()=>{
+            showCard(index);
+        });
+
+        nav.appendChild(dot);
+    });
+
+    carousel.after(nav);
+
+    const dots = document.querySelectorAll(".nav-dot");
+
+    showCard(0);
+
+});
 </script>
 
 
