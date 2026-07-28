@@ -3216,8 +3216,62 @@ width:100%;
 
 }
 
+/*finish nav*/
+.finish-nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    margin-top:36px;
+}
 
+.finish-arrow{
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
 
+    color:#fff;
+    font-size:24px;
+    line-height:1;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:all .3s ease;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.finish-arrow:hover{
+    background:#b00020;
+    border-color:#b00020;
+    transform:translateY(-3px) scale(1.06);
+    box-shadow:0 15px 35px rgba(176,0,32,.35);
+}
+
+.finish-arrow:active{
+    transform:scale(.95);
+}
+
+.finish-arrow svg{
+    width:20px;
+    height:20px;
+}
+
+@media (max-width:768px){
+    .finish-arrow{
+        width:46px;
+        height:46px;
+        font-size:20px;
+    }
+}
 
 
 </style>
@@ -3340,18 +3394,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="finish-carousel reveal">
 
     <!-- ITEM -->
-    <div class="finish-card active">
-      <div class="finish-image">
-        <img src="A30all.webp" alt="Amber Brass">
-      </div>
-      <div class="finish-info">
-        <div class="finish-name">Amber Brass</div>
-        <div class="finish-code">ABR</div>
-      </div>
-    </div>
+<div class="finish-card active">
+  <div class="finish-image">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=ABR+-+Amber+Brass&filter.v.price.gte=&filter.v.price.lte=">
+      <img src="A30all.webp" alt="Amber Brass">
+    </a>
+  </div>
+  <div class="finish-info">
+    <div class="finish-name">Amber Brass</div>
+    <div class="finish-code">ABR</div>
+  </div>
+</div>
 
-    <div class="finish-card">
+<div class="finish-card active">
       <div class="finish-image">
+        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=PC+-+Polish+Chrome&filter.v.price.gte=&filter.v.price.lte="></a>
         <img src="BelfastA25.webp" alt="Polished Chrome">
       </div>
       <div class="finish-info">
@@ -3360,8 +3417,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <div class="finish-card">
+<div class="finish-card active">
       <div class="finish-image">
+        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=BN+-+Brushed+Satin+Nickel&filter.v.price.gte=&filter.v.price.lte="></a>
         <img src="BradfordA23.webp" alt="Brushed Nickel Finish">
       </div>
       <div class="finish-info">
@@ -3370,8 +3428,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-        <div class="finish-card">
+        <div class="finish-card active">
       <div class="finish-image">
+         <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=Matte+Black&filter.v.option.color=MB+-+Matte+Black&filter.v.price.gte=&filter.v.price.lte="></a>
         <img src="A40a.webp" alt="Matte Black">
       </div>
       <div class="finish-info">
@@ -3381,8 +3440,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     
 
-    <div class="finish-card">
+    <div class="finish-card active">
       <div class="finish-image">
+        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=White&filter.v.price.gte=&filter.v.price.lte="></a>
         <img src="A28OKOK.webp" alt="White">
       </div>
       <div class="finish-info">
@@ -3391,8 +3451,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-       <div class="finish-card">
+       <div class="finish-card active">
       <div class="finish-image">
+        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=GRN+-+Green&filter.v.price.gte=&filter.v.price.lte="></a>
         <img src="A281.webp" alt="Green">
       </div>
       <div class="finish-info">
@@ -3401,8 +3462,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-       <div class="finish-card">
+       <div class="finish-card active">
       <div class="finish-image">
+        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=MBKABR&filter.v.price.gte=&filter.v.price.lte="></a>
         <img src="A32seriesA.webp" alt="Matte Black/Amber Brass">
       </div>
       <div class="finish-info">
@@ -3411,8 +3473,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     
-          <div class="finish-card">
+          <div class="finish-card active">
       <div class="finish-image">
+          <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=MBKABR&filter.v.option.color=MBKPCH&filter.v.price.gte=&filter.v.price.lte="></a>
         <img src="A32knobOK.webp" alt="Matte Black/Polished Chrome">
       </div>
       <div class="finish-info">
@@ -3421,8 +3484,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-           <div class="finish-card">
+           <div class="finish-card active">
       <div class="finish-image">
+          <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=WHTMBK&filter.v.price.gte=&filter.v.price.lte="></a>
         <img src="A37Glasgow.webp" alt="White/Matte Black">
       </div>
       <div class="finish-info">
@@ -3431,8 +3495,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-             <div class="finish-card">
+             <div class="finish-card active">
       <div class="finish-image">
+         <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=GPD&filter.v.price.gte=&filter.v.price.lte="></a>
         <img src="A39Ambk.webp" alt="Gunpower">
       </div>
       <div class="finish-info">
@@ -4156,38 +4221,7 @@ backToTop.addEventListener("click", () => {
   reveals.forEach(el => observer.observe(el));
 </script>
 
-<script>
-const carousel = document.querySelector('.finish-carousel');
 
-let autoScroll = setInterval(moveCarousel, 3000);
-
-function moveCarousel() {
-  carousel.scrollBy({
-    left: 340,
-    behavior: 'smooth'
-  });
-
-  if (
-    carousel.scrollLeft + carousel.clientWidth >=
-    carousel.scrollWidth - 20
-  ) {
-    setTimeout(() => {
-      carousel.scrollTo({
-        left: 0,
-        behavior: 'smooth'
-      });
-    }, 1000);
-  }
-}
-
-carousel.addEventListener('mouseenter', () => {
-  clearInterval(autoScroll);
-});
-
-carousel.addEventListener('mouseleave', () => {
-  autoScroll = setInterval(moveCarousel, 3000);
-});
-</script>
 <script>
 
 /* ==========================================
@@ -4398,7 +4432,9 @@ changeSlide,
 
 </script>
 
-<script>
+
+/* finishes dot */
+ <script>
 document.addEventListener("DOMContentLoaded", () => {
 
     const cards = document.querySelectorAll(".finish-card");
@@ -4406,37 +4442,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let current = 0;
 
-    // Show selected card
-    function showCard(index){
-        current = index;
+ function showCard(index){
 
-        cards.forEach((card,i)=>{
-            card.classList.toggle("active", i === index);
-        });
+    if(index < 0) index = cards.length - 1;
+    if(index >= cards.length) index = 0;
 
-        dots.forEach((dot,i)=>{
-            dot.classList.toggle("active", i === index);
-        });
-    }
+    current = index;
+
+    cards[current].scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest"
+    });
+
+    cards.forEach((card,i)=>{
+        card.classList.toggle("active", i === current);
+    });
+}
 
     // Create navigation
     const nav = document.createElement("div");
     nav.className = "finish-nav";
 
-    cards.forEach((card,index)=>{
-        const dot = document.createElement("span");
-        dot.className = "nav-dot";
+    const prev = document.createElement("button");
+    prev.className = "finish-arrow prev";
+    prev.innerHTML = "&#10094;"; // ←
 
-        dot.addEventListener("click",()=>{
-            showCard(index);
-        });
+    const next = document.createElement("button");
+    next.className = "finish-arrow next";
+    next.innerHTML = "&#10095;"; // →
 
-        nav.appendChild(dot);
+    prev.addEventListener("click", () => {
+        showCard(current - 1);
     });
 
-    carousel.after(nav);
+    next.addEventListener("click", () => {
+        showCard(current + 1);
+    });
 
-    const dots = document.querySelectorAll(".nav-dot");
+    nav.appendChild(prev);
+    nav.appendChild(next);
+
+    carousel.after(nav);
 
     showCard(0);
 
