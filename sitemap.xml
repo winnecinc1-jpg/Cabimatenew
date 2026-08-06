@@ -1,99 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://cabimatehardware.com/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>1.00</priority>
   </url>
-
   <url>
     <loc>https://cabimatehardware.com/about</loc>
+    <priority>0.80</priority>
   </url>
-
   <url>
     <loc>https://cabimatehardware.com/contact</loc>
+    <priority>0.80</priority>
   </url>
-
-    <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Leeds</loc>
+    <priority>0.80</priority>
   </url>
-
   <url>
     <loc>https://cabimatehardware.com/collection/Sheffield</loc>
+    <priority>0.80</priority>
   </url>
-
-  
   <url>
     <loc>https://cabimatehardware.com/collection/Bradford</loc>
+    <priority>0.80</priority>
   </url>
-
-    <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Bristol</loc>
+    <priority>0.80</priority>
   </url>
-
-     <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Belfast</loc>
+    <priority>0.80</priority>
   </url>
-
-       <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Oxford</loc>
+    <priority>0.80</priority>
   </url>
-
-    <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/York</loc>
+    <priority>0.80</priority>
   </url>
-
-    <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Briminghan</loc>
+    <priority>0.80</priority>
   </url>
-
-   <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Guildford</loc>
+    <priority>0.80</priority>
   </url>
-
-   <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Glasgow</loc>
+    <priority>0.80</priority>
   </url>
-
-   <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Norwich</loc>
+    <priority>0.80</priority>
   </url>
-
-   <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Norwich2</loc>
+    <priority>0.80</priority>
   </url>
-
-  
-   <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Stirling</loc>
+    <priority>0.80</priority>
   </url>
-
-     <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Nottingham</loc>
+    <priority>0.80</priority>
   </url>
-
-    <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Swansea</loc>
+    <priority>0.80</priority>
   </url>
-
-    <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Dundae</loc>
+    <priority>0.80</priority>
   </url>
-
-     <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Doncaster</loc>
+    <priority>0.80</priority>
   </url>
-
-     <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Newry</loc>
+    <priority>0.80</priority>
   </url>
-
-
   <url>
     <loc>https://cabimatehardware.com/collection/Newport</loc>
+    <priority>0.80</priority>
   </url>
-
-    <url>
+  <url>
     <loc>https://cabimatehardware.com/collection/Davids</loc>
+    <priority>0.80</priority>
   </url>
-
 </urlset>
