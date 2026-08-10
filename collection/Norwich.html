@@ -376,6 +376,58 @@ img {
 }
 
 
+/*product*/
+
+#product-component-1786393264464 {
+  width: 100%;
+}
+
+#product-component-1786393264464 .shopify-buy__product {
+  text-align: left !important;
+}
+
+#product-component-1786393264464 .shopify-buy__product-title {
+  font-size: 26px !important;
+  color: #a13d2d !important;
+}
+
+#product-component-1786393264464 .shopify-buy__product-price {
+  font-size: 18px !important;
+  color: #555555 !important;
+}
+
+#product-component-1786393264464 .shopify-buy__product-compare-at {
+  font-size: 15.3px !important;
+  color: #555555 !important;
+}
+
+#product-component-1786393264464 .shopify-buy__quantity {
+  font-size: 13px !important;
+}
+
+#product-component-1786393264464 .shopify-buy__btn {
+  font-size: 13px !important;
+  padding-top: 14.5px !important;
+  padding-bottom: 14.5px !important;
+  padding-left: 87px !important;
+  padding-right: 87px !important;
+  background-color: #a13d2d !important;
+  border-radius: 0 !important;
+}
+
+#product-component-1786393264464 .shopify-buy__btn:hover,
+#product-component-1786393264464 .shopify-buy__btn:focus {
+  background-color: #913729 !important;
+}
+
+@media (min-width: 601px) {
+  #product-component-1786393264464 .shopify-buy__product {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 50px !important;
+  }
+}
+
 </style>
 
 <link rel="stylesheet" href="/style.css">
@@ -421,23 +473,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-  <!-- SHOWCASE -->
-  <div class="architectural-showcase-wrapper">
 
-    <div class="arch-grid-row grid-hero">
-      <div class="editorial-image-frame">
-        <img src="/A30handles.webp" alt="NorwichA30">
-      </div>
-
-      <div>
-        <span class="arch-label primary">Norwich // Clean Contemporary</span>
-        <p class="showcase-text">
-The Clean Contemporary – Norwich Geometric Collection is inspired by the bold precision of modern minimalist design, 
-     reinterpreted for high-end residential living. Characterized by a strong, architectural silhouette and clean linear lines, 
-     Norwich Geometric brings striking sophistication and understated luxury to modern cabinetry.
-        </p>
-      </div>
-    </div>
+  <div id="product-component-1786393264464"></div>
 
     <hr class="arch-divider">
 
@@ -511,6 +548,267 @@ if (backToTop) {
 }
 </script>
 
+<script>
+  (function () {
+  var scriptURL =
+    "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement("script");
+    script.async = true;
+    script.src = scriptURL;
+
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(script);
+
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: "winnecinc.myshopify.com",
+      storefrontAccessToken:
+        "7c734f042447288daa601fdedb8718df"
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent("product", {
+        id: "9012720173210",
+
+        node: document.getElementById(
+          "product-component-1786393264464"
+        ),
+
+        moneyFormat: "%24%7B%7Bamount%7D%7D",
+
+        options: {
+          product: {
+            styles: {
+              product: {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0",
+                  "margin-bottom": "50px"
+                },
+                "text-align": "left"
+              },
+
+              title: {
+                "font-size": "26px",
+                "color": "#a13d2d"
+              },
+
+              button: {
+                "font-size": "13px",
+                "padding-top": "14.5px",
+                "padding-bottom": "14.5px",
+                "background-color": "#a13d2d",
+                "border-radius": "0px",
+                "padding-left": "87px",
+                "padding-right": "87px",
+
+                ":hover": {
+                  "background-color": "#913729"
+                },
+
+                ":focus": {
+                  "background-color": "#913729"
+                }
+              },
+
+              quantityInput: {
+                "font-size": "13px",
+                "padding-top": "14.5px",
+                "padding-bottom": "14.5px"
+              },
+
+              price: {
+                "font-size": "18px",
+                "color": "#555555"
+              },
+
+              compareAt: {
+                "font-size": "15.3px",
+                "color": "#555555"
+              },
+
+              unitPrice: {
+                "font-size": "15.3px",
+                "color": "#555555"
+              }
+            },
+
+            layout: "horizontal",
+
+            contents: {
+              img: false,
+              imgWithCarousel: true,
+              description: true
+            },
+
+            width: "100%",
+
+            text: {
+              button: "Add to cart"
+            }
+          },
+
+          productSet: {
+            styles: {
+              products: {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-20px"
+                }
+              }
+            }
+          },
+
+          modalProduct: {
+            contents: {
+              img: false,
+              imgWithCarousel: true,
+              button: false,
+              buttonWithQuantity: true
+            },
+
+            styles: {
+              product: {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              },
+
+              button: {
+                "font-size": "13px",
+                "padding-top": "14.5px",
+                "padding-bottom": "14.5px",
+                "background-color": "#a13d2d",
+                "border-radius": "0px",
+                "padding-left": "87px",
+                "padding-right": "87px",
+
+                ":hover": {
+                  "background-color": "#913729"
+                },
+
+                ":focus": {
+                  "background-color": "#913729"
+                }
+              },
+
+              quantityInput: {
+                "font-size": "13px",
+                "padding-top": "14.5px",
+                "padding-bottom": "14.5px"
+              },
+
+              title: {
+                "font-family": "Helvetica Neue, sans-serif",
+                "font-weight": "bold",
+                "font-size": "26px",
+                "color": "#4c4c4c"
+              },
+
+              price: {
+                "font-family": "Helvetica Neue, sans-serif",
+                "font-weight": "normal",
+                "font-size": "18px",
+                "color": "#4c4c4c"
+              },
+
+              compareAt: {
+                "font-family": "Helvetica Neue, sans-serif",
+                "font-weight": "normal",
+                "font-size": "15.3px",
+                "color": "#4c4c4c"
+              },
+
+              unitPrice: {
+                "font-family": "Helvetica Neue, sans-serif",
+                "font-weight": "normal",
+                "font-size": "15.3px",
+                "color": "#4c4c4c"
+              }
+            },
+
+            text: {
+              button: "Add to cart"
+            }
+          },
+
+          option: {
+            styles: {
+              label: {
+                "font-size": "15px"
+              }
+            }
+          },
+
+          cart: {
+            styles: {
+              button: {
+                "font-size": "13px",
+                "padding-top": "14.5px",
+                "padding-bottom": "14.5px",
+                "background-color": "#a13d2d",
+                "border-radius": "0px",
+
+                ":hover": {
+                  "background-color": "#913729"
+                },
+
+                ":focus": {
+                  "background-color": "#913729"
+                }
+              }
+            },
+
+            text: {
+              total: "Subtotal",
+              button: "Checkout"
+            }
+          },
+
+          toggle: {
+            styles: {
+              toggle: {
+                "background-color": "#a13d2d",
+
+                ":hover": {
+                  "background-color": "#913729"
+                },
+
+                ":focus": {
+                  "background-color": "#913729"
+                }
+              },
+
+              count: {
+                "font-size": "13px"
+              }
+            }
+          }
+        }
+      });
+    });
+  }
+})();
+  
+  </script>
 
 </body>
 </html>
