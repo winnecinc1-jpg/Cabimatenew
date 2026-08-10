@@ -3203,55 +3203,7 @@ padding:0 20px;
 
 
 
-
-.shopify-product-row{
-
-max-width:1200px;
-
-margin:0 auto;
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.shopify-product-row > div{
-
-width:calc(33.333% - 20px);
-
-}
-
-
-
-.shopify-buy__product{
-  
-
-width:100% !important;
-
-max-width:100% !important;
-
-margin:0 !important;
-
-}
-
-
-
-@media(max-width:768px){
-
-.shopify-product-row > div{
-
-width:100%;
-
-}
-
-}
+/* ========================================= SHOPIFY PRODUCT ROW 3 PRODUCTS PER ROW ========================================= */ .shopify-product-row { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: flex-start; gap: 20px; flex-wrap: wrap; } /* ========================================= EACH PRODUCT ========================================= */ .shopify-product-row > div { width: calc(33.333% - 14px); flex: 0 0 calc(33.333% - 14px); } /* Shopify product component */ .shopify-buy__product { width: 100% !important; max-width: 100% !important; margin: 0 !important; } /* ========================================= PRODUCT IMAGE ========================================= */ .shopify-buy__product-img-wrapper { width: 100% !important; position: relative !important; overflow: hidden !important; } /* Main product image */ .shopify-buy__product-img-wrapper img { width: 100% !important; height: auto !important; display: block !important; object-fit: contain !important; } /* ========================================= IMAGE CAROUSEL ========================================= */ .shopify-buy__carousel { width: 100% !important; position: relative !important; } /* ========================================= HIDE SMALL THUMBNAILS ========================================= */ .shopify-buy__carousel-item { display: none !important; } /* ========================================= CAROUSEL ARROWS ========================================= */ .shopify-buy__carousel-button { display: flex !important; position: absolute !important; top: 50% !important; transform: translateY(-50%) !important; width: 40px !important; height: 40px !important; padding: 0 !important; align-items: center !important; justify-content: center !important; background: rgba(255, 255, 255, 0.92) !important; border: 1px solid #dddddd !important; border-radius: 50% !important; z-index: 20 !important; opacity: 1 !important; cursor: pointer !important; } /* Previous arrow */ .shopify-buy__carousel-button--previous { left: 12px !important; } /* Next arrow */ .shopify-buy__carousel-button--next { right: 12px !important; } /* Arrow icon */ .shopify-buy__carousel-button svg { width: 16px !important; height: 16px !important; } /* ========================================= ARROW HOVER ========================================= */ .shopify-buy__carousel-button:hover { background: #ffffff !important; border-color: #999999 !important; } /* ========================================= PRODUCT TEXT ========================================= */ .shopify-buy__product-title { color: #000000 !important; } .shopify-buy__product-price { color: #000000 !important; } /* ========================================= MOBILE ========================================= */ @media (max-width: 768px) { .shopify-product-row { width: 100%; padding: 0 15px; gap: 0; } .shopify-product-row > div { width: 100%; flex: 0 0 100%; margin-bottom: 30px; } .shopify-buy__product { width: 100% !important; } .shopify-buy__carousel-button { width: 34px !important; height: 34px !important; } .shopify-buy__carousel-button--previous { left: 8px !important; } .shopify-buy__carousel-button--next { right: 8px !important; } .shopify-buy__carousel-button svg { width: 14px !important; height: 14px !important; } } /* ========================================= SMALL MOBILE ========================================= */ @media (max-width: 480px) { .shopify-product-row { padding: 0 10px; } }
 
 /*finish nav*/
 .finish-nav{
