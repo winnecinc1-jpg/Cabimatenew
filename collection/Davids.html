@@ -374,6 +374,86 @@ img {
 }
 
 
+/*product*/
+
+/* Shopify Product */
+.shopify-buy__product {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-bottom: 50px !important;
+  text-align: left !important;
+}
+
+/* Product Title */
+.shopify-buy__product__title {
+  font-size: 26px !important;
+  color: #a13d2d !important;
+}
+
+/* Add to Cart Button */
+.shopify-buy__btn {
+  font-size: 13px !important;
+  padding-top: 14.5px !important;
+  padding-bottom: 14.5px !important;
+  padding-left: 87px !important;
+  padding-right: 87px !important;
+  background-color: #a13d2d !important;
+  border-radius: 0 !important;
+}
+
+.shopify-buy__btn:hover,
+.shopify-buy__btn:focus {
+  background-color: #913729 !important;
+}
+
+/* Quantity */
+.shopify-buy__quantity {
+  font-size: 13px !important;
+  padding-top: 14.5px !important;
+  padding-bottom: 14.5px !important;
+}
+
+/* Price */
+.shopify-buy__product__price {
+  font-size: 18px !important;
+  color: #555555 !important;
+}
+
+/* Compare At Price */
+.shopify-buy__product__compare-at {
+  font-size: 15.3px !important;
+  color: #555555 !important;
+}
+
+/* Option Labels */
+.shopify-buy__option-select-wrapper label {
+  font-size: 15px !important;
+}
+
+/* Cart Button */
+.shopify-buy__cart__checkout {
+  font-size: 13px !important;
+  padding-top: 14.5px !important;
+  padding-bottom: 14.5px !important;
+  background-color: #a13d2d !important;
+  border-radius: 0 !important;
+}
+
+.shopify-buy__cart__checkout:hover,
+.shopify-buy__cart__checkout:focus {
+  background-color: #913729 !important;
+}
+
+/* Cart Toggle */
+.shopify-buy-frame--toggle {
+  background-color: #a13d2d !important;
+}
+
+.shopify-buy-frame--toggle:hover,
+.shopify-buy-frame--toggle:focus {
+  background-color: #913729 !important;
+}
+
 </style>
 
 <link rel="stylesheet" href="/style.css">
@@ -420,25 +500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </dl>
     </div>
   </div>
-
-  <!-- SHOWCASE -->
-  <div class="architectural-showcase-wrapper">
-
-    <div class="arch-grid-row grid-hero">
-      <div class="editorial-image-frame">
-        <img src="/A36handles.webp" alt="DavidsA36">
-      </div>
-
-      <div>
-        <span class="arch-label primary">Davis // Modern Elegance</span>
-        <p class="showcase-text">
-          Defined by a streamlined, minimalist form, the Davis collection celebrates the enduring appeal of modern design. 
-        Its distinct, clean silhouette introduces sophisticated visual interest and architectural harmony while maintaining a refined, 
-        high-end presence across both contemporary and transitional residential interiors.
-        </p>
-      </div>
-    </div>
-
+<div id="product-component-1786395134231"></div>
     <hr class="arch-divider">
 
     <div class="arch-grid-row grid-specs">
@@ -510,6 +572,328 @@ if (backToTop) {
 }
 </script>
 
+<script>
+  (function () {
+
+  var scriptURL =
+    'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+
+  if (window.ShopifyBuy) {
+
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+
+    var script = document.createElement('script');
+
+    script.async = true;
+    script.src = scriptURL;
+
+    (
+      document.getElementsByTagName('head')[0] ||
+      document.getElementsByTagName('body')[0]
+    ).appendChild(script);
+
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+
+    var client = ShopifyBuy.buildClient({
+
+      domain: 'winnecinc.myshopify.com',
+
+      storefrontAccessToken:
+        '7c734f042447288daa601fdedb8718df'
+
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+
+      ui.createComponent('product', {
+
+        id: '9032399290522',
+
+        node:
+          document.getElementById(
+            'product-component-1786395134231'
+          ),
+
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+
+        options: {
+
+          product: {
+
+            styles: {
+
+              product: {
+
+                '@media (min-width: 601px)': {
+                  'max-width': '100%',
+                  'margin-left': '0',
+                  'margin-bottom': '50px'
+                },
+
+                'text-align': 'left'
+              },
+
+              title: {
+                'font-size': '26px',
+                'color': '#a13d2d'
+              },
+
+              button: {
+
+                'font-size': '13px',
+
+                'padding-top': '14.5px',
+                'padding-bottom': '14.5px',
+
+                'padding-left': '87px',
+                'padding-right': '87px',
+
+                'background-color': '#a13d2d',
+
+                'border-radius': '0px',
+
+                ':hover': {
+                  'background-color': '#913729'
+                },
+
+                ':focus': {
+                  'background-color': '#913729'
+                }
+              },
+
+              quantityInput: {
+                'font-size': '13px',
+                'padding-top': '14.5px',
+                'padding-bottom': '14.5px'
+              },
+
+              price: {
+                'font-size': '18px',
+                'color': '#555555'
+              },
+
+              compareAt: {
+                'font-size': '15.3px',
+                'color': '#555555'
+              },
+
+              unitPrice: {
+                'font-size': '15.3px',
+                'color': '#555555'
+              }
+            },
+
+            layout: 'horizontal',
+
+            contents: {
+              img: false,
+              imgWithCarousel: true,
+              description: true
+            },
+
+            width: '100%',
+
+            text: {
+              button: 'Add to cart'
+            }
+          },
+
+          productSet: {
+
+            styles: {
+
+              products: {
+
+                '@media (min-width: 601px)': {
+                  'margin-left': '-20px'
+                }
+
+              }
+
+            }
+
+          },
+
+          modalProduct: {
+
+            contents: {
+              img: false,
+              imgWithCarousel: true,
+              button: false,
+              buttonWithQuantity: true
+            },
+
+            styles: {
+
+              product: {
+
+                '@media (min-width: 601px)': {
+                  'max-width': '100%',
+                  'margin-left': '0px',
+                  'margin-bottom': '0px'
+                }
+
+              },
+
+              button: {
+
+                'font-size': '13px',
+
+                'padding-top': '14.5px',
+                'padding-bottom': '14.5px',
+
+                'padding-left': '87px',
+                'padding-right': '87px',
+
+                'background-color': '#a13d2d',
+
+                'border-radius': '0px',
+
+                ':hover': {
+                  'background-color': '#913729'
+                },
+
+                ':focus': {
+                  'background-color': '#913729'
+                }
+
+              },
+
+              quantityInput: {
+                'font-size': '13px',
+                'padding-top': '14.5px',
+                'padding-bottom': '14.5px'
+              },
+
+              title: {
+                'font-family': 'Helvetica Neue, sans-serif',
+                'font-weight': 'bold',
+                'font-size': '26px',
+                'color': '#4c4c4c'
+              },
+
+              price: {
+                'font-family': 'Helvetica Neue, sans-serif',
+                'font-weight': 'normal',
+                'font-size': '18px',
+                'color': '#4c4c4c'
+              },
+
+              compareAt: {
+                'font-family': 'Helvetica Neue, sans-serif',
+                'font-weight': 'normal',
+                'font-size': '15.3px',
+                'color': '#4c4c4c'
+              },
+
+              unitPrice: {
+                'font-family': 'Helvetica Neue, sans-serif',
+                'font-weight': 'normal',
+                'font-size': '15.3px',
+                'color': '#4c4c4c'
+              }
+
+            },
+
+            text: {
+              button: 'Add to cart'
+            }
+
+          },
+
+          option: {
+
+            styles: {
+
+              label: {
+                'font-size': '15px'
+              }
+
+            }
+
+          },
+
+          cart: {
+
+            styles: {
+
+              button: {
+
+                'font-size': '13px',
+
+                'padding-top': '14.5px',
+                'padding-bottom': '14.5px',
+
+                'background-color': '#a13d2d',
+
+                'border-radius': '0px',
+
+                ':hover': {
+                  'background-color': '#913729'
+                },
+
+                ':focus': {
+                  'background-color': '#913729'
+                }
+
+              }
+
+            },
+
+            text: {
+              total: 'Subtotal',
+              button: 'Checkout'
+            }
+
+          },
+
+          toggle: {
+
+            styles: {
+
+              toggle: {
+                'background-color': '#a13d2d',
+
+                ':hover': {
+                  'background-color': '#913729'
+                },
+
+                ':focus': {
+                  'background-color': '#913729'
+                }
+              },
+
+              count: {
+                'font-size': '13px'
+              }
+
+            }
+
+          }
+
+        }
+
+      });
+
+    });
+
+  }
+
+})();
+  </script>
 
 </body>
 </html>
