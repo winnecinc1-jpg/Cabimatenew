@@ -906,12 +906,44 @@ body, html{
   opacity:1;
 }
 
-/* ======================================================
-   STATS (clean minimal upgrade)
-====================================================== */
-/* ======================================================
-   PREMIUM STATS
-====================================================== */
+
+/* 1. Carousel Container: Handles horizontal scrolling */
+.finish-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* Creates space on the far left and right without breaking scroll boundaries */
+  padding-bottom: 15px; /* Keeps scrollbars or shadows visible if present */
+}
+
+/* 2. Invisible spacers at the start and end of the scroll track */
+.finish-carousel::before,
+.finish-carousel::after {
+  content: "";
+  flex: 0 0 5vw; /* Sets 5% screen width offset on the left and right ends */
+}
+
+/* 3. Your finish card styling */
+.finish-card.active {
+  flex: 0 0 auto;       /* Prevents cards from shrinking */
+  margin-right: 20px;   /* Gap between individual cards */
+}
+
+/* Remove margin from the last card so the ::after spacer handles the right edge */
+.finish-card.active:last-child {
+  margin-right: 0;
+}
+
+/* 4. Align the Header to match the carousel edge */
+.finish-header {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  box-sizing: border-box;
+}
+
 /* ==============================
    CABIMATE STATS SECTION
 ================================ */
