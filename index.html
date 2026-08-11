@@ -375,124 +375,199 @@ body, html{
 
 
 /*collection section-function*/
+/* =========================
+/* =========================
+   PINTEREST STYLE GALLERY
+========================= */
+
 .hardware-bento {
   width: 100%;
-  padding: 80px 5%;
+  max-width: 1600px; /* wider */
+  margin: 0 auto;
+  padding: 40px 15px;
+  box-sizing: border-box;
 }
+
+/* HEADER */
+
+.hardware-bento .finish-header {
+  margin-bottom: 20px;
+}
+
+.hardware-bento .section-heading {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+
+/* =========================
+   MASONRY GRID
+========================= */
 
 .bento-grid {
-  display:grid;
-  grid-template-columns:repeat(4, 1fr);
-  grid-auto-rows:260px;
-  gap:20px;
-}
-
-/* HERO */
-.bento-card.hero {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-/* TALL = one full column each row */
-.bento-card.tall {
-  grid-column: span 2;
-  grid-row: span 2;
+  column-count: 3;
+  column-gap: 8px;
 }
 
 
-/* WIDE */
-.bento-card.wide {
-  grid-column: span 2;
-}
-
-
-/* SMALL */
-.bento-card.small {
-  grid-column: span 1;
-  grid-row: span 2;
-}
-
+/* =========================
+   CARDS
+========================= */
 
 .bento-card {
   position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 8px;
+
   overflow: hidden;
-  border-radius: 4px;
+  text-decoration: none;
+  background: #eee;
+
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
 }
+
+
+/* IMAGE */
 
 .bento-card img {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:.5s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+
+  transition: transform 0.45s ease;
 }
+
+
+/* HOVER */
 
 .bento-card:hover img {
-  transform:scale(1.05);
+  transform: scale(1.035);
 }
 
+
+/* =========================
+   REMOVE OLD BENTO SIZING
+========================= */
+
+.bento-card.hero,
+.bento-card.tall,
+.bento-card.wide,
+.bento-card.small {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+
+/* =========================
+   TEXT
+========================= */
 
 .bento-content {
-  position:absolute;
-  bottom:30px;
-  left:30px;
-  color:#750213;
-  z-index:2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 45px 14px 12px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0)
+  );
+
+  color: #fff;
 }
 
-.bento-card::after {
-  content:"";
-  position:absolute;
-  inset:0;
-
+.bento-content h2,
+.bento-content h3,
+.bento-content h4 {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: 400;
 }
 
-/* ==========================
-   Mobile Layout
-========================== */
-@media (max-width:768px){
 
-  .hardware-bento{
-    padding:60px 20px;
+/* =========================
+   LARGE SCREEN
+========================= */
+
+@media (min-width: 1400px) {
+
+  .hardware-bento {
+    max-width: 1800px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .bento-grid{
-    display:flex;
-    flex-direction:column;
-    gap:16px;
+  .bento-grid {
+    column-gap: 10px;
   }
 
+  .bento-card {
+    margin-bottom: 10px;
+  }
+}
 
-  .bento-card,
-  .bento-card.hero,
-  .bento-card.tall,
-  .bento-card.wide,
-  .bento-card.small{
 
-    width:100%;
-    height:auto;
+/* =========================
+   TABLET
+========================= */
 
-    grid-column:auto;
-    grid-row:auto;
+@media (max-width: 900px) {
 
-    aspect-ratio:4 / 3;
+  .hardware-bento {
+    padding: 30px 12px;
   }
 
-
-  .bento-card img{
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-    display:block;
+  .bento-grid {
+    column-count: 2;
+    column-gap: 8px;
   }
 
+  .bento-card {
+    margin-bottom: 8px;
+  }
+}
 
-  .bento-content{
-    left:20px;
-    bottom:20px;
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .hardware-bento {
+    padding: 25px 8px;
   }
 
+  .bento-grid {
+    column-count: 2;
+    column-gap: 5px;
+  }
+
+  .bento-card {
+    margin-bottom: 5px;
+  }
+
+  .bento-content {
+    padding: 35px 8px 8px;
+  }
+
+  .bento-content h2,
+  .bento-content h3,
+  .bento-content h4 {
+    font-size: 10px;
+  }
 }
   /*collection section*/
 
