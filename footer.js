@@ -35,7 +35,9 @@ class SharedFooter extends HTMLElement {
   </div>
 
   <p class="footer-newsletter-text">
-    Premium kitchen cabinet hardware, cabinet pulls, and cabinet knobs crafted for modern interiors. Our team is available to assist with product selection, quotations, and project support.
+    Crafted for modern homes that value character, 
+    Cabimate Hardware brings a curated blend of vintage warmth and effortless contemporary style to your space. 
+    From sleek kitchen cabinet pulls to statement cabinet knobs and architectural handles, our hardware delivers a design-forward edge to custom cabinetry, kitchens, and bath remodels.
 
 
   </p>
