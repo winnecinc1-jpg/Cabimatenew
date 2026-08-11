@@ -906,44 +906,12 @@ body, html{
   opacity:1;
 }
 
-
-/* 1. Carousel Container: Handles horizontal scrolling */
-.finish-carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  width: 100%;
-  box-sizing: border-box;
-  
-  /* Creates space on the far left and right without breaking scroll boundaries */
-  padding-bottom: 15px; /* Keeps scrollbars or shadows visible if present */
-}
-
-/* 2. Invisible spacers at the start and end of the scroll track */
-.finish-carousel::before,
-.finish-carousel::after {
-  content: "";
-  flex: 0 0 5vw; /* Sets 5% screen width offset on the left and right ends */
-}
-
-/* 3. Your finish card styling */
-.finish-card.active {
-  flex: 0 0 auto;       /* Prevents cards from shrinking */
-  margin-right: 20px;   /* Gap between individual cards */
-}
-
-/* Remove margin from the last card so the ::after spacer handles the right edge */
-.finish-card.active:last-child {
-  margin-right: 0;
-}
-
-/* 4. Align the Header to match the carousel edge */
-.finish-header {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  box-sizing: border-box;
-}
-
+/* ======================================================
+   STATS (clean minimal upgrade)
+====================================================== */
+/* ======================================================
+   PREMIUM STATS
+====================================================== */
 /* ==============================
    CABIMATE STATS SECTION
 ================================ */
@@ -3449,6 +3417,42 @@ padding:0 20px;
   color: inherit;
 }
 
+/* Creates left and right screen margins for the header */
+.finish-header {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  box-sizing: border-box;
+}
+
+/* Scrollable container setup */
+.finish-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Adds pseudo-spacers on the far left and far right ends of the scroll track */
+.finish-carousel::before,
+.finish-carousel::after {
+  content: "";
+  flex: 0 0 5vw; /* Sets 5% of screen width space on each side */
+}
+
+/* Fixes broken anchor link tags in the last 4 items */
+.finish-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Matte Black image framing override (keeps hardware focused) */
+.finish-card.active img[alt="Matte Black"] {
+  object-fit: contain;
+  transform: scale(1.3);
+}
+
 </style>
 
 <meta property="og:title" content="Cabimate Hardware" />
@@ -3560,138 +3564,137 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
   <!-- HEADER -->
-  <div class="finish-header reveal">
-    <h2 class="section-heading">
-      FINISHES
-    </h2>
-  </div>
-
-  <!-- CARDS -->
-  <div class="finish-carousel reveal">
-
-    <!-- ITEM -->
-<div class="finish-card active">
-  <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=ABR+-+Amber+Brass&filter.v.price.gte=&filter.v.price.lte=" class="finish-card-link">
-    <div class="finish-image">
-      <img src="A30all.webp" alt="Amber Brass">
-    </div>
-    <div class="finish-info">
-      <div class="finish-name">Amber Brass</div>
-      <div class="finish-code">ABR</div>
-    </div>
-  </a>
+<div class="finish-header reveal">
+  <h2 class="section-heading">
+    FINISHES
+  </h2>
 </div>
 
-<div class="finish-card active">
-        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=PC+-+Polish+Chrome&filter.v.price.gte=&filter.v.price.lte=">
-             <div class="finish-image">
+<!-- CARDS -->
+<div class="finish-carousel reveal">
+
+  <!-- ITEM -->
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=ABR+-+Amber+Brass&filter.v.price.gte=&filter.v.price.lte=" class="finish-card-link">
+      <div class="finish-image">
+        <img src="A30all.webp" alt="Amber Brass">
+      </div>
+      <div class="finish-info">
+        <div class="finish-name">Amber Brass</div>
+        <div class="finish-code">ABR</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=PC+-+Polish+Chrome&filter.v.price.gte=&filter.v.price.lte=">
+      <div class="finish-image">
         <img src="BelfastA25.webp" alt="Polished Chrome">
       </div>
       <div class="finish-info">
         <div class="finish-name">Polished Chrome</div>
         <div class="finish-code">PCH</div>
       </div>
-       </a>
-    </div>
+    </a>
+  </div>
 
-<div class="finish-card active">
-        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=BN+-+Brushed+Satin+Nickel&filter.v.price.gte=&filter.v.price.lte=">
-         <div class="finish-image">
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=BN+-+Brushed+Satin+Nickel&filter.v.price.gte=&filter.v.price.lte=">
+      <div class="finish-image">
         <img src="BradfordA23.webp" alt="Brushed Nickel Finish">
       </div>
       <div class="finish-info">
         <div class="finish-name">Brushed Nickel</div>
         <div class="finish-code">BSN</div>
       </div>
-       </a>
-    </div>
+    </a>
+  </div>
 
-        <div class="finish-card active">
-         <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=Matte+Black&filter.v.option.color=MB+-+Matte+Black&filter.v.price.gte=&filter.v.price.lte=">
-            <div class="finish-image">
-         <img src="A40a.webp" alt="Matte Black">
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=Matte+Black&filter.v.option.color=MB+-+Matte+Black&filter.v.price.gte=&filter.v.price.lte=">
+      <div class="finish-image">
+        <img src="A40a.webp" alt="Matte Black">
       </div>
       <div class="finish-info">
         <div class="finish-name">Matte Black</div>
         <div class="finish-code">MBK</div>
       </div>
-      </a>
-    </div>
-    
+    </a>
+  </div>
 
-    <div class="finish-card active">
-        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=White&filter.v.price.gte=&filter.v.price.lte=">
-         <div class="finish-image">
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=White&filter.v.price.gte=&filter.v.price.lte=">
+      <div class="finish-image">
         <img src="A28OKOK.webp" alt="White">
       </div>
       <div class="finish-info">
         <div class="finish-name">White</div>
         <div class="finish-code">WHT</div>
       </div>
-        </a>
-    </div>
+    </a>
+  </div>
 
-       <div class="finish-card active">
-        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=GRN+-+Green&filter.v.price.gte=&filter.v.price.lte=">
-          <div class="finish-image">
-          <img src="A281.webp" alt="Green">
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=GRN+-+Green&filter.v.price.gte=&filter.v.price.lte=">
+      <div class="finish-image">
+        <img src="A281.webp" alt="Green">
       </div>
       <div class="finish-info">
         <div class="finish-name">Green</div>
         <div class="finish-code">GRN</div>
       </div>
-      </a>
-    </div>
+    </a>
+  </div>
 
-       <div class="finish-card active">
-        <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=MBKABR&filter.v.price.gte=&filter.v.price.lte="></a>
-        <div class="finish-image">
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=MBKABR&filter.v.price.gte=&filter.v.price.lte=">
+      <div class="finish-image">
         <img src="A32seriesA.webp" alt="Matte Black/Amber Brass">
       </div>
       <div class="finish-info">
         <div class="finish-name">Matte Black/Amber Brass</div>
         <div class="finish-code">MBKABR</div>
       </div>
-       </a>
-    </div>
-    
-          <div class="finish-card active">
-          <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=MBKABR&filter.v.option.color=MBKPCH&filter.v.price.gte=&filter.v.price.lte="></a>
-              <div class="finish-image">
-          <img src="A32knobOK.webp" alt="Matte Black/Polished Chrome">
+    </a>
+  </div>
+
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=MBKABR&filter.v.option.color=MBKPCH&filter.v.price.gte=&filter.v.price.lte=">
+      <div class="finish-image">
+        <img src="A32knobOK.webp" alt="Matte Black/Polished Chrome">
       </div>
       <div class="finish-info">
         <div class="finish-name">Matte Black/Polished Chrome</div>
         <div class="finish-code">MBKPCH</div>
       </div>
-        </a>
-    </div>
+    </a>
+  </div>
 
-           <div class="finish-card active">
-          <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=WHTMBK&filter.v.price.gte=&filter.v.price.lte="></a>
-              <div class="finish-image">
-          <img src="A37Glasgow.webp" alt="White/Matte Black">
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=WHTMBK&filter.v.price.gte=&filter.v.price.lte=">
+      <div class="finish-image">
+        <img src="A37Glasgow.webp" alt="White/Matte Black">
       </div>
       <div class="finish-info">
         <div class="finish-name">White/Matte Black</div>
         <div class="finish-code">WHTMBK</div>
       </div>
-      </a>
-    </div>
+    </a>
+  </div>
 
-             <div class="finish-card active">
-         <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=GPD&filter.v.price.gte=&filter.v.price.lte="></a>
-              <div class="finish-image">
-         <img src="A39Ambk.webp" alt="Gunpower">
+  <div class="finish-card active">
+    <a href="https://winnecinc.com/collections/cabimate-charm-your-cabimate?sort_by=most-relevant&filter.v.option.color=GPD&filter.v.price.gte=&filter.v.price.lte=">
+      <div class="finish-image">
+        <img src="A39Ambk.webp" alt="Gunpower">
       </div>
       <div class="finish-info">
         <div class="finish-name">Gunpower</div>
         <div class="finish-code">GPD</div>
       </div>
-        </a>
-    </div>
-
+    </a>
   </div>
+
+</div>
 
  
 <!-- ======================================================
