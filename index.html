@@ -403,6 +403,13 @@ body, html{
   color: #333;
 }
 
+/* Mobile Version */
+@media (max-width: 768px) {
+  .hardware-bento .section-heading {
+    font-size: 28px;        /* Scaled down for mobile screens */
+    letter-spacing: 1px;    /* Slightly tighter tracking for smaller displays */
+  }
+}
 
 /* =========================
    MASONRY GRID
@@ -697,7 +704,7 @@ body, html{
 @media (max-width: 768px) {
 .section-heading {
   color: #333;
-  font-size: clamp(28px, 6vw, 50px);
+  font-size: clamp(15px, 6vw, 50px);
   line-height: 1;
   letter-spacing: 1px;
   margin-bottom: 5px;
