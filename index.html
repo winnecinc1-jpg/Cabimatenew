@@ -668,6 +668,35 @@ body, html{
   }
 }
 
+@media (max-width: 768px) {
+  .series-content {
+    left: 15px;
+    right: 15px;
+    bottom: 18px;
+  }
+
+  .series-number {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+  }
+
+  .series-content h3 {
+    font-size: 1.35rem;
+  }
+
+  .series-content p {
+    margin-top: 6px;
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  /* Disables hover zoom effect on touch screens to prevent sticky hover states */
+  .series-card:hover img {
+    transform: none;
+  }
+}
+
 
   /* SECTION SHARED */
   section { padding: 120px 60px; }
