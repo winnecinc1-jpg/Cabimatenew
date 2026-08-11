@@ -694,6 +694,19 @@ body, html{
     padding-left:5%;   /* was 8% */
 }
 
+@media (max-width: 768px) {
+.section-heading {
+  color: #333;
+  font-size: clamp(28px, 6vw, 50px);
+  line-height: 1;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  padding-top: clamp(40px, 8vw, 100px); /* Scales smoothly from mobile (40px) to desktop (100px) */
+  padding-left: 5vw;                    /* Keeps side alignment consistent across screen sizes */
+}
+}
+
+
   .section-sub {
     font-family: var(--serif);
     font-style: italic;
