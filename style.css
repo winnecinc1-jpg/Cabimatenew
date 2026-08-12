@@ -996,7 +996,7 @@ footer {
 }
 
 .search-box-minimal:focus-within {
-  border-bottom-color: #000000; /* Darkens underline when typing */
+  border-bottom-color: #585858; /* Darkens underline when typing */
 }
 
 .search-box-minimal input {
