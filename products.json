@@ -16,11 +16,19 @@
     "image": "A21leeds.webp"
   },
   {
-    "sku": "CAB-BRIS-03",
-    "title": "The Bristol Cabinet Handle",
-    "category": "Handles",
-    "finish": "Matte Black, Polish Chrome",
-    "url": "/collections/bristol.html",
-    "image": "/images/bristol.jpg"
+    "sku": "A21-000BSN",
+    "title": "The Leeds Collection Cabinet Knobs",
+    "category": "Knobs",
+    "finish": "Brush Satin Nickel",
+    "url": "/collections/leeds.html",
+    "image": "A21leeds.webp"
+  }
+    {
+    "sku": "A21-000ABR",
+    "title": "The Leeds Collection Cabinet Knobs",
+    "category": "Knobs",
+    "finish": "Amber Brass",
+    "url": "/collections/leeds.html",
+    "image": "A21leeds.webp"
   }
 ]
