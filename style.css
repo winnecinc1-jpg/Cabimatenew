@@ -925,7 +925,7 @@ footer {
   background: transparent;
   outline: none;
   font-size: 13px;
-  color: #222222;
+  color: #f8f8f8;
   padding: 4px 8px 4px 0;
   font-family: inherit;
 }
@@ -1069,7 +1069,6 @@ footer {
 .results-dropdown::-webkit-scrollbar-thumb:hover {
   background: #bbbbbb;
 }
-
 
 
 .search-item-header {

@@ -19,7 +19,7 @@ class SharedNavbar extends HTMLElement {
     <input 
       type="text" 
       id="searchInput" 
-      placeholder="What are you looking for?" 
+      placeholder="" 
       oninput="searchProducts()" 
       autocomplete="off"
     >
@@ -31,7 +31,7 @@ class SharedNavbar extends HTMLElement {
       
       <!-- Magnifying Glass Icon -->
       <button class="icon-btn" aria-label="Search" type="button">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666666" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f8f8f8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>

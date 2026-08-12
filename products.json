@@ -2,7 +2,7 @@
   {
     "sku": "A21-000PCH",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Knobs",
+    "category": "Knob",
     "finish": "Polished Chrome",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -10,7 +10,7 @@
   {
     "sku": "A21-000MBK",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Knobs",
+    "category": "Knob",
     "finish": "Matte Black",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -18,7 +18,7 @@
   {
     "sku": "A21-000BSN",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Knobs",
+    "category": "Knob",
     "finish": "Brush Satin Nickel",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -26,7 +26,7 @@
     {
     "sku": "A21-000ABR",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Knobs",
+    "category": "Knob",
     "finish": "Amber Brass",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -34,7 +34,7 @@
       {
     "sku": "A21-128PCH",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Polished Chrome",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -42,7 +42,7 @@
         {
     "sku": "A21-128MBK",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Matte Black",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -50,7 +50,7 @@
     {
     "sku": "A21-128BSN",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Brush Satin Nickel",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -58,7 +58,7 @@
       {
     "sku": "A21-128ABR",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Amber Brass",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -66,7 +66,7 @@
         {
     "sku": "A21-160PCH",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Polished Chrome",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -74,7 +74,7 @@
           {
     "sku": "A21-160MBK",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Matte Black",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -82,7 +82,7 @@
             {
     "sku": "A21-160BSN",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Brushed Satin Nickel",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -90,7 +90,7 @@
               {
     "sku": "A21-160ABR",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Amber Brass",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -98,7 +98,7 @@
           {
     "sku": " A21-320PCH",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Polish Chrome",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -106,7 +106,7 @@
      {
     "sku": " A21-320MBK",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Matte Black",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
@@ -114,9 +114,113 @@
        {
     "sku": " A21-320BSN",
     "title": "The Leeds Collection Cabinet Knobs",
-    "category": "Handles",
+    "category": "Handle",
     "finish": "Brushed Satin Nickel",
     "url": "/collection/Leeds.html",
     "image": "A21leeds.webp"
+  },
+    {
+    "sku": " A22-000BSN",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Knob",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+      {
+    "sku": "  A22-000ABR",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Knob",
+    "finish": "Amber Brass",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+       {
+    "sku": "  A22-000PCH",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Knob",
+    "finish": "Polish Chrome",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+  {
+    "sku": "  A22-000MBK",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Knob",
+    "finish": "Matte Black",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+    {
+    "sku": "  A22-128BSN",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Handle",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+   {
+    "sku": "  A22-128ABR",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Handle",
+    "finish": "Amber Brass",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+  {
+    "sku": "  A22-128PCH",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Handle",
+    "finish": "Polish Chrome",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+  {
+    "sku": "  A22-128MBK",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Handle",
+    "finish": "Matte Black",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+    {
+    "sku": "  A22-160BSN",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Handle",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+     {
+    "sku": "  A22-160ABR",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Handle",
+    "finish": "Amber Brass",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+  {
+    "sku": "  A22-160PCH",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Handle",
+    "finish": "Polish Chrome",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+  {
+    "sku": "  A22-160MBK",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Handle",
+    "finish": "Matte Black",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
+  },
+   {
+    "sku": "   A22-224BSN",
+    "title": "The Sheffield Collection Cabinet Knobs",
+    "category": "Handle",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Sheffield.html",
+    "image": "SheffieldA22OK.webp"
   }
 ]
