@@ -1,19 +1,19 @@
 [
   {
-    "sku": "CAB-LEEDS-01",
-    "title": "The Leeds Collection Cabinet Handle",
-    "category": "Handles",
-    "finish": "Matte Black, Polish Chrome, Amber Brass",
+    "sku": "A21-000PCH",
+    "title": "The Leeds Collection Cabinet Knobs",
+    "category": "Knobs",
+    "finish": "Polished Chrome",
     "url": "/collections/leeds.html",
-    "image": "/images/leeds.jpg"
+    "image": "A21leeds.webp"
   },
   {
-    "sku": "CAB-BRAD-02",
-    "title": "The Bradford Collection Cabinet Knob",
+    "sku": "A21-000MBK",
+    "title": "The Leeds Collection Cabinet Knobs",
     "category": "Knobs",
-    "finish": "Brushed Satin Nickel, Amber Brass",
-    "url": "/collections/bradford.html",
-    "image": "/images/bradford.jpg"
+    "finish": "Matte Black",
+    "url": "/collections/leeds.html",
+    "image": "A21leeds.webp"
   },
   {
     "sku": "CAB-BRIS-03",
