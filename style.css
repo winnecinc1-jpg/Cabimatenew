@@ -963,18 +963,20 @@ footer {
 
 /* Dropdown Overlay Styles */
 .results-dropdown {
+  display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: calc(100% + 8px);
   right: 0;
+  width: 320px; /* Slightly wider for better breathing room */
   background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 2px;
-  margin-top: 8px;
-  max-height: 350px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  max-height: 380px;
   overflow-y: auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  padding: 6px 0;
+  animation: fadeInDown 0.18s ease-out;
 }
 
 
