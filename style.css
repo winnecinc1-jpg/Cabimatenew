@@ -962,6 +962,7 @@ footer {
 }
 
 /* Dropdown Overlay Styles */
+/* Clean & Modern Dropdown Container */
 .results-dropdown {
   display: none;
   position: absolute;
@@ -979,82 +980,92 @@ footer {
   animation: fadeInDown 0.18s ease-out;
 }
 
-
-/* Search Results Dropdown */
-.search-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 200px; /* Adjust max-width to fit your header layout */
+/* Subtle Smooth Entry Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.search-box-minimal {
-  display: flex;
-  align-items: center;
-  position: relative;
-  border-bottom: 1px solid #b5b5b5; /* Bottom underline */
-  padding-bottom: 6px;
-  background: transparent;
-  transition: border-color 0.2s ease;
-}
-
-.search-box-minimal:focus-within {
-  border-bottom-color: #585858; /* Darkens underline when typing */
-}
-
-.search-box-minimal input {
-  width: 100%;
-  border: none;
-  background: transparent;
-  outline: none;
-  font-size: 13px;
-  color: #222222;
-  padding: 4px 8px 4px 0;
-  font-family: inherit;
-}
-
-/* Light grey placeholder styling */
-.search-box-minimal input::placeholder {
-  color: #999999;
-  font-weight: 300;
-}
-
-/* Right aligned icon group */
-.search-icons {
+/* Individual Result Row */
+.search-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding-left: 8px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #222222;
+  transition: background-color 0.15s ease;
 }
 
-.icon-btn {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
+.search-item:hover {
+  background-color: #f7f7f7;
+}
+
+/* Thumbnail Image Styling */
+.search-item img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  flex-shrink: 0;
+  border: 1px solid #eaeaea;
+}
+
+/* Typography & Layout */
+.search-item-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
 }
 
-.icon-btn:hover {
-  opacity: 1;
+.search-item-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.1px;
 }
 
-/* Dropdown Overlay Styles */
-.results-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 2px;
-  margin-top: 8px;
-  max-height: 350px;
-  overflow-y: auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
+.search-item-meta {
+  font-size: 11px;
+  color: #777777;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Empty State */
+.no-results {
+  padding: 18px 14px;
+  font-size: 12px;
+  color: #888888;
+  text-align: center;
+}
+
+/* Sleek Modern Scrollbar */
+.results-dropdown::-webkit-scrollbar {
+  width: 5px;
+}
+
+.results-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.results-dropdown::-webkit-scrollbar-thumb {
+  background: #dddddd;
+  border-radius: 10px;
+}
+
+.results-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #bbbbbb;
 }
