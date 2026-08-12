@@ -223,8 +223,8 @@ font-family: 'Arial Black', Arial, Helvetica, sans-serif;;
   padding:140px 6vw;
   text-align:center;
   background:
-  linear-gradient(rgba(0,0,0,0.82),rgba(0,0,0,0.82)),
-  url('https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1600&auto=format&fit=crop') center/cover;
+  linear-gradient(rgba(0, 0, 0, 0.301),rgba(0,0,0,0.82)),
+  url('knobsA31.png') center/cover;
 }
 
 .cta h2{
@@ -581,6 +581,62 @@ footer p{
 #backToTop:active {
   transform: scale(0.95);
 }
+
+/*subscribe*/
+
+.fw-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+
+  min-width: 220px;
+  padding: 16px 20px 16px 24px;
+
+  background: #111;
+  color: #fff;
+
+  font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  text-decoration: none;
+  border: 1px solid #111;
+
+  transition: all 0.3s ease;
+}
+
+.fw-btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  background: #fff;
+  color: #111;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+
+  transition: all 0.3s ease;
+}
+
+.fw-submit-btn:hover {
+  background: #fff;
+  color: #111;
+  border-color: #111;
+}
+
+.fw-submit-btn:hover .fw-btn-arrow {
+  background: #111;
+  color: #fff;
+  transform: translateX(4px);
+}
+
 </style>
 
 <meta property="og:title" content="Cabimate Hardware" />
@@ -842,7 +898,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
        <div class="fw-faq-head">
-        Subscribe For Design Ideas & Exclusive Deals
+        More Design Ideas & Exclusive Deals
        </div>
 
       <p>
@@ -853,32 +909,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- RIGHT -->
-    <div class="fw-newsletter-right">
-
-      <form class="fw-newsletter-form">
-
-        <div class="fw-input-group">
-          <label>Full Name</label>
-          <input type="text" placeholder="Your name">
-        </div>
-
-        <div class="fw-input-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="Your email">
-        </div>
-
-        <div class="fw-input-group">
-          <label>Project Type</label>
-          <input type="text" placeholder="Kitchen / Bath / Designer">
-        </div>
-
-        <button type="submit" class="fw-submit-btn">
-          Subscribe Now
-        </button>
-
-      </form>
-
-    </div>
+ <a href="https://winnecinc.com/account/register"
+   class="fw-submit-btn"
+   target="_blank"
+   rel="noopener">
+  Subscribe Now
+</a>
 
   </div>
 
