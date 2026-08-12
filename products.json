@@ -1,22 +1,26 @@
 [
   {
-    "id": "leeds-handle",
+    "sku": "CAB-LEEDS-01",
     "title": "The Leeds Collection Cabinet Handle",
     "category": "Handles",
-    "finishes": ["Polish Chrome", "Matte Black", "Brushed Satin Nickel", "Amber Brass"],
-    "sizes": ["Knobs", "128mm", "160mm", "320mm"],
-    "price": "$4.45",
-    "url": "/collection/Leeds",
-    "image": "A21leeds/webp"
+    "finish": "Matte Black, Polish Chrome, Amber Brass",
+    "url": "/collections/leeds.html",
+    "image": "/images/leeds.jpg"
   },
   {
-    "id": "bradford-knob",
+    "sku": "CAB-BRAD-02",
     "title": "The Bradford Collection Cabinet Knob",
     "category": "Knobs",
-    "finishes": ["Brushed Satin Nickel", "Amber Brass", "Matte Black"],
-    "sizes": ["Knobs", "128mm", "160mm"],
-    "price": "$4.45",
-    "url": "/products/bradford-knob.html",
+    "finish": "Brushed Satin Nickel, Amber Brass",
+    "url": "/collections/bradford.html",
     "image": "/images/bradford.jpg"
+  },
+  {
+    "sku": "CAB-BRIS-03",
+    "title": "The Bristol Cabinet Handle",
+    "category": "Handles",
+    "finish": "Matte Black, Polish Chrome",
+    "url": "/collections/bristol.html",
+    "image": "/images/bristol.jpg"
   }
 ]

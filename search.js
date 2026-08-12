@@ -1,6 +1,6 @@
 let products = [];
 
-// Load products from root directory
+// Load product catalog from root folder
 fetch('/products.json')
   .then(response => response.json())
   .then(data => { products = data; })
@@ -20,8 +20,9 @@ function searchProducts() {
     return;
   }
 
-  // Filter by title, category, or finish
+  // Filter matches across SKU, title, category, or finish
   const filtered = products.filter(product => 
+    (product.sku && product.sku.toLowerCase().includes(input)) ||
     (product.title && product.title.toLowerCase().includes(input)) ||
     (product.category && product.category.toLowerCase().includes(input)) ||
     (product.finish && product.finish.toLowerCase().includes(input))
@@ -33,7 +34,7 @@ function searchProducts() {
     return;
   }
 
-  // Build result items
+  // Render items with SKU pill/badge
   filtered.forEach(product => {
     const item = document.createElement('a');
     item.href = product.url;
@@ -41,7 +42,10 @@ function searchProducts() {
     item.innerHTML = `
       <img src="${product.image}" alt="${product.title}">
       <div class="search-item-info">
-        <span class="search-item-title">${product.title}</span>
+        <div class="search-item-header">
+          <span class="search-item-title">${product.title}</span>
+          ${product.sku ? `<span class="search-item-sku">SKU: ${product.sku}</span>` : ''}
+        </div>
         <span class="search-item-meta">${product.finish}</span>
       </div>
     `;
@@ -51,11 +55,10 @@ function searchProducts() {
   resultsContainer.style.display = 'block';
 }
 
-// Close dropdown on outside click
+// Hide popup if clicking outside
 document.addEventListener('click', (e) => {
   if (!e.target.closest('.search-wrapper')) {
     const container = document.getElementById('searchResults');
     if (container) container.style.display = 'none';
   }
 });
-

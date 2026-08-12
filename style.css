@@ -1069,3 +1069,33 @@ footer {
 .results-dropdown::-webkit-scrollbar-thumb:hover {
   background: #bbbbbb;
 }
+
+
+
+.search-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.search-item-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-item-sku {
+  font-size: 10px;
+  font-weight: 600;
+  color: #555555;
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
