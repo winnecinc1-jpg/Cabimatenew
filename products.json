@@ -1,0 +1,22 @@
+[
+  {
+    "id": "leeds-handle",
+    "title": "The Leeds Collection Cabinet Handle",
+    "category": "Handles",
+    "finishes": ["Polish Chrome", "Matte Black", "Brushed Satin Nickel", "Amber Brass"],
+    "sizes": ["Knobs", "128mm", "160mm", "320mm"],
+    "price": "$4.45",
+    "url": "/products/leeds-handle.html",
+    "image": "/images/leeds.jpg"
+  },
+  {
+    "id": "bradford-knob",
+    "title": "The Bradford Collection Cabinet Knob",
+    "category": "Knobs",
+    "finishes": ["Brushed Satin Nickel", "Amber Brass", "Matte Black"],
+    "sizes": ["Knobs", "128mm", "160mm"],
+    "price": "$4.45",
+    "url": "/products/bradford-knob.html",
+    "image": "/images/bradford.jpg"
+  }
+]
