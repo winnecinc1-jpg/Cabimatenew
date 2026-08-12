@@ -707,12 +707,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="tabs-wrap" id="collTabs">
   <div class="tabs-inner">
-    <button class="tab-btn active" data-tab="overview">Refined Urban <span class="tab-count"></span></button>
-    <button class="tab-btn" data-tab="kitchen">Industrial Heritage <span class="tab-count"></span></button>
-    <button class="tab-btn" data-tab="shower">Timeless British <span class="tab-count"></span></button>
-    <button class="tab-btn" data-tab="bathroom">Clean Contemporary <span class="tab-count"></span></button>
-    <button class="tab-btn" data-tab="pantry">Metropolitan Luxe<span class="tab-count"></span></button>
-    <button class="tab-btn" data-tab="finishes">Modern Elegance<span class="tab-count"></span></button>
+
+    <button class="tab-btn active"
+      data-tab="overview"
+      data-slug="RefinedUrban">
+      Refined Urban <span class="tab-count"></span>
+    </button>
+
+    <button class="tab-btn"
+      data-tab="kitchen"
+      data-slug="IndustrialHeritage">
+      Industrial Heritage <span class="tab-count"></span>
+    </button>
+
+    <button class="tab-btn"
+      data-tab="shower"
+      data-slug="TimelessBritish">
+      Timeless British <span class="tab-count"></span>
+    </button>
+
+    <button class="tab-btn"
+      data-tab="bathroom"
+      data-slug="CleanContemporary">
+      Clean Contemporary <span class="tab-count"></span>
+    </button>
+
+    <button class="tab-btn"
+      data-tab="pantry"
+      data-slug="MetropolitanLuxe">
+      Metropolitan Luxe <span class="tab-count"></span>
+    </button>
+
+    <button class="tab-btn"
+      data-tab="finishes"
+      data-slug="ModernElegance">
+      Modern Elegance <span class="tab-count"></span>
+    </button>
+
   </div>
 </div>
 
@@ -1171,6 +1202,34 @@ if (backToTop) {
 <!-- PUT THE SCRIPT TAG HERE (At the very bottom, right before the body closes) -->
   <script src="navbar.js"></script>
 <script src="/search.js"></script>
+
+<!--Collection+Slug-->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const tabs = document.querySelectorAll(".tab-btn");
+
+  tabs.forEach(tab => {
+
+    tab.addEventListener("click", function () {
+
+      const slug = this.dataset.slug;
+
+      // Change URL
+      history.pushState(
+        {},
+        "",
+        "/collection/" + slug
+      );
+
+    });
+
+  });
+
+});
+</script>
+
 
 <shared-footer></shared-footer>
 
