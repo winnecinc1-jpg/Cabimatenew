@@ -492,7 +492,47 @@
     "sku": "         A24-128ABR",
     "title": "The Bradford Collection Cabinet Handle",
     "category": "Handle",
+    "finish": "Amber Brass",
+    "url": "/collection/Bristol.html",
+    "image": "A24bristolOK2.webp"
+  } ,
+    {
+    "sku": "         A24-128MBK",
+    "title": "The Bradford Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Matte Black",
+    "url": "/collection/Bristol.html",
+    "image": "A24bristolOK2.webp"
+  },
+    {
+    "sku": "         A24-160PCH",
+    "title": "The Bradford Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Polish Chrome",
+    "url": "/collection/Bristol.html",
+    "image": "A24bristolOK2.webp"
+  },
+    {
+    "sku": "         A24-160BSN",
+    "title": "The Bradford Collection Cabinet Handle",
+    "category": "Handle",
     "finish": "Brushed Satin Nickel",
+    "url": "/collection/Bristol.html",
+    "image": "A24bristolOK2.webp"
+  },
+    {
+    "sku": "         A24-160ABR",
+    "title": "The Bradford Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Amber Brass",
+    "url": "/collection/Bristol.html",
+    "image": "A24bristolOK2.webp"
+  },
+    {
+    "sku": "         A24-160MBK",
+    "title": "The Bradford Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Matte Black",
     "url": "/collection/Bristol.html",
     "image": "A24bristolOK2.webp"
   }
