@@ -310,5 +310,37 @@
     "finish": "Matte Black",
     "url": "/collection/Sheffield.html",
     "image": "SheffieldA22OK.webp"
+  },
+  {
+    "sku": "   A23-000PCH",
+    "title": "The Bradford Collection Cabinet Knobs",
+    "category": "Knob",
+    "finish": "Polish Chrome",
+    "url": "/collection/Bradford.html",
+    "image": "bradfordA23-2.webp"
+  },
+    {
+    "sku": "   A23-000BSN",
+    "title": "The Bradford Collection Cabinet Knobs",
+    "category": "Knob",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Bradford.html",
+    "image": "bradfordA23-2.webp"
+  },
+   {
+    "sku": "   A23-000MBK",
+    "title": "The Bradford Collection Cabinet Knobs",
+    "category": "Knob",
+    "finish": "Matte Black",
+    "url": "/collection/Bradford.html",
+    "image": "bradfordA23-2.webp"
+  },
+    {
+    "sku": "    A23-000ABR",
+    "title": "The Bradford Collection Cabinet Knobs",
+    "category": "Knob",
+    "finish": "Amber Brass",
+    "url": "/collection/Bradford.html",
+    "image": "bradfordA23-2.webp"
   }
 ]
