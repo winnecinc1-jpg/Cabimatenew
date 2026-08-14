@@ -315,7 +315,7 @@
     "sku": "   A23-000PCH",
     "title": "The Bradford Collection Cabinet Knobs",
     "category": "Knob",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Bradford.html",
     "image": "bradfordA23-2.webp"
   },
@@ -347,7 +347,7 @@
     "sku": "    A23-128PCH",
     "title": "The Bradford Collection Cabinet Knobs",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Bradford.html",
     "image": "bradfordA23-2.webp"
   },
@@ -379,7 +379,7 @@
     "sku": "    A23-160PCH",
     "title": "The Bradford Collection Cabinet Knobs",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Bradford.html",
     "image": "bradfordA23-2.webp"
   },
@@ -411,7 +411,7 @@
     "sku": "     A23-320PCH",
     "title": "The Bradford Collection Cabinet Knobs",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Bradford.html",
     "image": "bradfordA23-2.webp"
   },
@@ -443,7 +443,7 @@
     "sku": "        A24-000PCH",
     "title": "The Bradford Collection Cabinet Knobs",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Bristol.html",
     "image": "A24bristolOK2.webp"
   },
@@ -475,7 +475,7 @@
     "sku": "         A24-128PCH",
     "title": "The Bradford Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Bristol.html",
     "image": "A24bristolOK2.webp"
   },
@@ -508,7 +508,7 @@
     "sku": "         A24-160PCH",
     "title": "The Bradford Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Bristol.html",
     "image": "A24bristolOK2.webp"
   },
@@ -540,7 +540,7 @@
     "sku": "         A24-320PCH",
     "title": "The Bradford Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Bristol.html",
     "image": "A24bristolOK2.webp"
   },
@@ -572,7 +572,7 @@
     "sku": "         A25-000PCH",
     "title": "The Belfast Collection Cabinet Knob",
     "category": "Knob",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Belfast.html",
     "image": "A25Belfastseries.webp"
   },
@@ -604,7 +604,7 @@
     "sku": "         A25-128PCH",
     "title": "The Belfast Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Belfast.html",
     "image": "A25Belfastseries.webp"
   },
@@ -636,7 +636,7 @@
     "sku": "         A25-192PCH",
     "title": "The Belfast Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Belfast.html",
     "image": "A25Belfastseries.webp"
   },
@@ -669,7 +669,7 @@
     "sku": "         A25-320PCH",
     "title": "The Belfast Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Belfast.html",
     "image": "A25Belfastseries.webp"
   } ,
@@ -697,19 +697,12 @@
     "url": "/collection/Belfast.html",
     "image": "A25Belfastseries.webp"
   },
-    {
-    "sku": "         A25-320MBK",
-    "title": "The Belfast Collection Cabinet Handle",
-    "category": "Handle",
-    "finish": "Matte Black",
-    "url": "/collection/Belfast.html",
-    "image": "A25Belfastseries.webp"
-  },
+
     {
     "sku": "         A25-A18PCH",
     "title": "The Belfast Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Belfast.html",
     "image": "A25Belfastseries.webp"
   },
@@ -741,7 +734,7 @@
     "sku": "         A26-000PCH",
     "title": "The Doncaster Collection Cabinet Knob",
     "category": "Knob",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Doncaster.html",
     "image": "A26e.webp"
   },
@@ -773,7 +766,7 @@
     "sku": "         A26-128PCH",
     "title": "The Doncaster Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Doncaster.html",
     "image": "A26e.webp"
   },
@@ -805,7 +798,7 @@
     "sku": "         A26-160PCH",
     "title": "The Doncaster Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Doncaster.html",
     "image": "A26e.webp"
   },
@@ -837,7 +830,7 @@
     "sku": "         A26-320PCH",
     "title": "The Doncaster Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Doncaster.html",
     "image": "A26e.webp"
   },
@@ -869,7 +862,7 @@
     "sku": "          A28-000PCH",
     "title": "The York Collection Cabinet Handle",
     "category": "Knob",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/York.html",
     "image": "A26e.webp"
   },
@@ -926,7 +919,7 @@
     "sku": "          A28-128PCH",
     "title": "The York Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/York.html",
     "image": "A28.png"
   },
@@ -982,7 +975,7 @@
     "sku": "          A28-192PCH",
     "title": "The York Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/York.html",
     "image": "A28.png"
   },
@@ -1038,7 +1031,7 @@
     "sku": "          A28-320PCH",
     "title": "The York Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/York.html",
     "image": "A28.png"
   },
@@ -1102,7 +1095,7 @@
     "sku": "           A42-000PCH",
     "title": "The Stirling Collection Cabinet Handle",
     "category": "Knob",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Stirling.html",
     "image": "A28.png"
   },
@@ -1134,7 +1127,7 @@
     "sku": "           A42-128PCH",
     "title": "The York Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
+    "finish": "Polished Chrome",
     "url": "/collection/Stirling.html",
     "image": "A28.png"
   },
@@ -1166,8 +1159,8 @@
     "sku": "           A30-032PCH",
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
-    "url": "/collection/York.html",
+    "finish": "Polished Chrome",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1175,7 +1168,7 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Brushed Satin Nickel",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1183,7 +1176,7 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Matte Black",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1191,15 +1184,15 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Amber Brass",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
     "sku": "           A30-128ABR",
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
-    "url": "/collection/York.html",
+    "finish": "Polished Chrome",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1207,7 +1200,7 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Brushed Satin Nickel",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1215,7 +1208,7 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Matte Black",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1223,15 +1216,15 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Amber Brass",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
     "sku": "           A30-192PCH",
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
-    "url": "/collection/York.html",
+    "finish": "Polished Chrome",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1239,7 +1232,7 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Brushed Satin Nickel",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1247,7 +1240,7 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Matte Black",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1255,15 +1248,15 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Amber Brass",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
     "sku": "           A30-320PCH",
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
-    "finish": "Polish Chrome",
-    "url": "/collection/York.html",
+    "finish": "Polished Chrome",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1271,7 +1264,7 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Brushed Satin Nickel",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1279,7 +1272,7 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Matte Black",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
@@ -1287,17 +1280,290 @@
     "title": "The Norwich Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Amber Brass",
-    "url": "/collection/York.html",
+    "url": "/collection/Norwich.html",
     "image": "A28.png"
   },
     {
     "sku": "           A31-000BSN",
+    "title": "The Nottingham Collection Cabinet Knob",
+    "category": "Knob",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-000ABR",
+    "title": "The Nottingham Collection Cabinet Knob",
+    "category": "Knob",
+    "finish": "Amber Brass",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-000PCH",
+    "title": "The Nottingham Collection Cabinet Knob",
+    "category": "Knob",
+    "finish": "Polished Chrome",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-000MBK",
+    "title": "The Nottingham Collection Cabinet Knob",
+    "category": "Knob",
+    "finish": "Matte Black",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-128BSN",
     "title": "The Nottingham Collection Cabinet Handle",
     "category": "Handle",
     "finish": "Brushed Satin Nickel",
-    "url": "/collection/York.html",
-    "image": "A28.png"
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-128ABR",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Amber Brass",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-128PCH",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Polished Chrome",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-128MBK",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Matte Black",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-192BSN",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-192ABR",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Amber Brass",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-192PCH",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Polished Chrome",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-192MBK",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Matte Black",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-320BSN",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-320ABR",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Amber Brass",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-320PCH",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Polished Chrome",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-320BSN",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-320ABR",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Amber Brass",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-320PCH",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Polished Chrome",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A31-320MBK",
+    "title": "The Nottingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Matte Black",
+    "url": "/collection/Nottingham.html",
+    "image": "A31knobs.webp"
+  },
+    {
+    "sku": "           A32-000MBKPCH",
+    "title": "The Birmingham Collection Cabinet Handle",
+    "category": "Handle",
+    "finish": "Matte Black/ Polished Chrome",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "           A32-000BSN",
+    "title": "The Birmingham Collection Cabinet Knob",
+    "category": "Knob",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-000MBKABR",
+    "title": "The Birmingham Collection Cabinet Knob",
+    "category": "Knob",
+    "finish": "Matte Black/ Amber Brass",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-000MBK",
+    "title": "The Birmingham Collection Cabinet Knob",
+    "category": "Knob",
+    "finish": "Matte Black",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-128MBKPCH",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Matte Black/ Polished Chrome",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-128BSN",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-128MBKABR",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Matte Black/ Amber Brass",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-128MBK",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Matte Blacks",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-192MBKPCH",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Matte Black/ Polished Chrome",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-192BSN",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-192MBKABR",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Matte Black/ Amber Brass",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-192MBK",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Matte Black",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-320MBKPCH",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Matte Black/ Polished Chrome",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-320BSN",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Brushed Satin Nickel",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-320MBKABR",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Matte Black/ Amber Brass",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
+  },
+    {
+    "sku": "            A32-320MBK",
+    "title": "The Birmingham Collection Cabinet handle",
+    "category": "Handle",
+    "finish": "Matte Black",
+    "url": "/collection/Briminghan.html",
+    "image": "A32seriesA.webp"
   }
+
 
 
 
