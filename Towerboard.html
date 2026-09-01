@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CABIMATE</title>
+  <link rel="icon" type="image/png" href="cabimate.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<!-- Standard tab favicon -->
+  <link rel="icon" type="image/x-icon" href="/logo.webp">
+  <!-- PNG fallbacks for high-res screens -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo.webp">
+  <!-- Apple touch icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo.webp"
+
+<meta property="og:title" content="CABIMATE — Charm Your Cabinet">
+<meta property="og:description" content="Explore signature cabinet knobs, pulls, handles, and hardware from CABIMATE.">
+<meta property="og:image" content="https://cabimatehardware.com/A35a.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:url" content="https://cabimatehardware.com/">
+<meta property="og:type" content="website">
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T75NB8GM');</script>
+<!-- End Google Tag Manager -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4N3LN3MG1M');
+</script>
+
+<style>
+  :root{
+    --ink:#1c1a19;
+    --paper:#ffffff;
+    --sand:#f6f3ee;
+    --red:#8e2a2f;
+    --red-dark:#6d1f23;
+    --line:#e5ddd2;
+    --gold:#a9895f;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- Header ---------- */
+  .masthead{
+    padding:56px 24px 40px;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+  }
+  .wordmark{
+    display:inline-block;
+    background:var(--red);
+    color:#fff;
+    font-size:15px;
+    letter-spacing:6px;
+    font-weight:600;
+    padding:9px 22px;
+    margin-bottom:26px;
+  }
+  .masthead h1{
+    font-size:clamp(28px,5vw,44px);
+    font-weight:300;
+    letter-spacing:2px;
+    margin:0 0 10px;
+  }
+  .masthead h1 strong{font-weight:700;}
+  .masthead p{
+    margin:0;
+    color:#6b625a;
+    font-size:15px;
+    letter-spacing:.5px;
+  }
+  .meta-line{
+    margin-top:22px;
+    font-size:12px;
+    color:#9a8f83;
+    letter-spacing:1px;
+  }
+
+  /* ---------- Contents / index ---------- */
+  .index{
+    max-width:920px;
+    margin:0 auto;
+    padding:34px 24px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+    border-bottom:1px solid var(--line);
+  }
+  .index a{
+    text-decoration:none;
+    color:var(--ink);
+    font-size:13px;
+    letter-spacing:.5px;
+    border:1px solid var(--line);
+    padding:10px 18px;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  .index a:hover{border-color:var(--red); color:var(--red);}
+  .index a span{color:var(--red); font-weight:700; margin-right:6px;}
+
+  /* ---------- Series section ---------- */
+  .series{
+    max-width:1100px;
+    margin:0 auto;
+    padding:64px 24px;
+    border-bottom:1px solid var(--line);
+  }
+  .series:nth-child(even){background:var(--sand);}
+  .series-head{
+    display:flex;
+    align-items:baseline;
+    gap:18px;
+    margin-bottom:26px;
+    flex-wrap:wrap;
+  }
+  .series-num{
+    font-size:13px;
+    letter-spacing:3px;
+    color:var(--red);
+    font-weight:700;
+    border-bottom:2px solid var(--red);
+    padding-bottom:4px;
+  }
+  .series-title{
+    font-size:26px;
+    font-weight:300;
+    letter-spacing:.5px;
+    margin:0;
+  }
+  .series-title strong{font-weight:700;}
+  .series-sub{
+    font-size:13px;
+    color:#8a8078;
+    letter-spacing:.5px;
+    margin:6px 0 0;
+    width:100%;
+  }
+  .board-frame{
+    background:#fff;
+    border:1px solid var(--line);
+    padding:10px;
+  }
+  .board-frame img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .board-note{
+    margin-top:14px;
+    font-size:12.5px;
+    color:#8a8078;
+    letter-spacing:.3px;
+  }
+
+  /* ---------- Finishes strip ---------- */
+  .finishes{
+    max-width:1100px;
+    margin:0 auto;
+    padding:50px 24px 60px;
+    text-align:center;
+  }
+  .finishes h2{
+    font-size:13px;
+    letter-spacing:3px;
+    color:var(--red);
+    font-weight:700;
+    margin:0 0 22px;
+  }
+  .chip-row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+  }
+  .chip{
+    font-size:12.5px;
+    letter-spacing:.4px;
+    border:1px solid var(--line);
+    padding:8px 14px;
+    color:#4a433d;
+  }
+
+  footer{
+    text-align:center;
+    padding:36px 24px 50px;
+    font-size:12px;
+    color:#a89e93;
+    letter-spacing:1px;
+  }
+
+  @media (max-width:600px){
+    .masthead{padding:40px 18px 30px;}
+    .series{padding:44px 18px;}
+  }
+
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #7a0c0c;   /* dark red */
+  color: #ffffff;        /* white arrow */
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.25s ease;
+  z-index: 9999;
+}
+
+#backToTop:hover {
+  background: #a31212;   /* lighter red on hover */
+  transform: translateY(-3px);
+}
+
+#backToTop:active {
+  transform: scale(0.95);
+}
+
+</style>
+
+
+<meta property="og:title" content="Cabimate Hardware" />
+<meta property="og:description" content="Premium hardware products and solutions." />
+<meta property="og:image" content="https://cabimatehardware.com/A35a.webp" />
+<meta property="og:url" content="https://cabimatehardware.com/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://cabimatehardware.com/A35a.webp" />
+
+
+<!-- Link to your centralized master stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PUT THE NAVBAR TAG HERE (At the very top of the body) -->
+  <shared-navbar></shared-navbar>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T75NB8GM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="masthead">
+    <div class="wordmark">CABIMATE</div>
+    <h1>Handle &amp; <strong>Knob Collection</strong></h1>
+    <p>Full tower board review — Series 1 through 6</p>
+    <div class="meta-line">PREPARED FOR CLIENT REVIEW · CABIMATEHARDWARE.COM</div>
+  </div>
+
+  <div class="index">
+    <a href="#s1"><span>01</span>Refined Urban</a>
+    <a href="#s2"><span>02</span>Industrial Heritage</a>
+    <a href="#s3"><span>03</span>Timeless British</a>
+    <a href="#s4"><span>04</span>Clean Contemporary</a>
+    <a href="#s5"><span>05</span>Metropolitan Luxe</a>
+    <a href="#s6"><span>06</span>Modern Elegance</a>
+  </div>
+
+  <section class="series" id="s1">
+    <div class="series-head">
+      <span class="series-num">01</span>
+      <h3 class="series-title">Refined <strong>Urban</strong></h3>
+      <p class="series-sub">Series 1 — A21 / A22 / A23</p>
+    </div>
+    <div class="board-frame">
+      <img src="series1.webp" alt="Cabimate Series 1 Refined Urban board — A21, A22, A23">
+    </div>
+    <p class="board-note">Slim bar pulls and square knobs in Amber Brass, Brushed Nickel, Polished Chrome and Matte Black.</p>
+  </section>
+
+  <section class="series" id="s2">
+    <div class="series-head">
+      <span class="series-num">02</span>
+      <h3 class="series-title">Industrial <strong>Heritage</strong></h3>
+      <p class="series-sub">Series 2 — A24 / A25 / A43</p>
+    </div>
+    <div class="board-frame">
+      <img src="series2.webp" alt="Cabimate Series 2 Industrial Heritage board — A24, A25, A43">
+    </div>
+    <p class="board-note">Cast bail pulls, arched pulls and round knobs across Amber Brass, Polished Chrome, Brushed Nickel and Matte Black.</p>
+  </section>
+
+  <section class="series" id="s3">
+    <div class="series-head">
+      <span class="series-num">03</span>
+      <h3 class="series-title">Timeless <strong>British</strong></h3>
+      <p class="series-sub">Series 3 — A28 / A32 / A33 / A37</p>
+    </div>
+    <div class="board-frame">
+      <img src="series3.webp" alt="Cabimate Series 3 Timeless British board — A28, A32, A33, A37">
+    </div>
+    <p class="board-note">Two-tone bar pulls with colour inlays, including White, Green and Blue accents alongside standard metal finishes.</p>
+  </section>
+
+  <section class="series" id="s4">
+    <div class="series-head">
+      <span class="series-num">04</span>
+      <h3 class="series-title">Clean <strong>Contemporary</strong></h3>
+      <p class="series-sub">Series 4 — A30 / A40 / A42</p>
+    </div>
+    <div class="board-frame">
+      <img src="series4.webp" alt="Cabimate Series 4 Clean Contemporary board — A30, A40, A42">
+    </div>
+    <p class="board-note">Crystal-inset knobs and pulls, curved edge pulls and a mirror-polished long bar in Amber Brass, Matte Black, Brushed Nickel and Polished Chrome.</p>
+  </section>
+
+  <section class="series" id="s5">
+    <div class="series-head">
+      <span class="series-num">05</span>
+      <h3 class="series-title">Metropolitan <strong>Luxe</strong></h3>
+      <p class="series-sub">Series 5 — A31 / A38 / A39</p>
+    </div>
+    <div class="board-frame">
+      <img src="series5.webp" alt="Cabimate Series 5 Metropolitan Luxe board — A31, A38, A39">
+    </div>
+    <p class="board-note">Bar pulls with hardware-grade end caps, knurled-texture pulls and knobs across Matte Black, Brushed Nickel, Gunpowder and Amber Brass.</p>
+  </section>
+
+  <section class="series" id="s6">
+    <div class="series-head">
+      <span class="series-num">06</span>
+      <h3 class="series-title">Modern <strong>Elegance</strong></h3>
+      <p class="series-sub">Series 6 — A26 / A34 / A35 / A36</p>
+    </div>
+    <div class="board-frame">
+      <img src="series6.webp" alt="Cabimate Series 6 Modern Elegance board — A26, A34, A35, A36">
+    </div>
+    <p class="board-note">Sculptural knobs, faceted pulls and slim T-bar handles in Matte Black, Brushed Nickel, Polished Chrome and Amber Brass.</p>
+  </section>
+
+  <div class="finishes">
+    <h2>AVAILABLE FINISHES</h2>
+    <div class="chip-row">
+      <div class="chip">ABR — Amber Brass</div>
+      <div class="chip">PCH — Polished Chrome</div>
+      <div class="chip">BSN — Brushed Satin Nickel</div>
+      <div class="chip">MBK — Matte Black</div>
+      <div class="chip">GPD — Gunpowder</div>
+      <div class="chip">WHT — White</div>
+      <div class="chip">GRN — Green</div>
+      <div class="chip">BLU — Blue</div>
+      <div class="chip">MBKABR — Matte Black / Amber Brass</div>
+      <div class="chip">MBKPCH — Matte Black / Polished Chrome</div>
+      <div class="chip">WHTMBK — White / Matte Black</div>
+    </div>
+  </div>
+
+      <button id="backToTop">↑</button>
+
+</section>
+
+
+
+  <script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  backToTop.style.display = window.scrollY > 300 ? "flex" : "none";
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+
+  <script src="navbar.js"></script>
+  <script src="/search.js"></script>
+
+<shared-footer></shared-footer>
+
+<script src="footer.js"></script>
+
+  <footer>CABIMATE — CHARM YOUR CABINET · cabimatehardware.com</footer>
+
+</body>
+</html>
