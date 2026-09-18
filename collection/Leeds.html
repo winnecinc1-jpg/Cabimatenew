@@ -520,6 +520,15 @@ if (backToTop) {
 </script>
 
 
+
+
+<!-- PRODUCT BUTTON RENDERS -->
+<div id="product-component-1786136595313"></div>
+
+<!--  PLACEHOLDER RIGHT HERE -->
+<div style="margin: 15px 0; font-size: 16px; color: #4c4c4c;">
+  <strong>SKU:</strong> <span id="product-sku-display">Loading SKU...</span>
+</div>
 <script>
 (function () {
   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -538,9 +547,17 @@ if (backToTop) {
       storefrontAccessToken: '7c734f042447288daa601fdedb8718df',
     });
 
+    // 1. Fetch initial SKU on load so it isn't blank
+    client.product.fetch('8980306952346').then(function (product) {
+      var skuNode = document.getElementById('product-sku-display');
+      if (skuNode && product.variants.length > 0) {
+        skuNode.textContent = product.variants[0].sku;
+      }
+    });
+
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       
-      // 1. GLOBAL FLOATING CART (Persists across pages)
+      // 2. GLOBAL FLOATING CART
       ui.createComponent('cart', {
         node: document.getElementById('shopify-cart-node') || document.body,
         options: {
@@ -556,10 +573,7 @@ if (backToTop) {
                 "border-radius": "0px"
               }
             },
-            text: {
-              total: "Subtotal",
-              button: "Checkout"
-            }
+            text: { total: "Subtotal", button: "Checkout" }
           },
           toggle: {
             styles: {
@@ -568,15 +582,13 @@ if (backToTop) {
                 ":hover": { "background-color": "#913729" },
                 ":focus": { "background-color": "#913729" }
               },
-              count: {
-                "font-size": "13px"
-              }
+              count: { "font-size": "13px" }
             }
           }
         }
       });
 
-      // 2. PRODUCT COMPONENT (ID: 8980306952346)
+      // 3. PRODUCT COMPONENT WITH LIVE SKU LISTENER
       var targetNode = document.getElementById('product-component-1786136595313');
       if (targetNode) {
         ui.createComponent('product', {
@@ -590,16 +602,12 @@ if (backToTop) {
               contents: {
                 img: false,
                 imgWithCarousel: true,
-                description: true
+                description: true,
+                options: true // <-- Renders length and color selectors
               },
-              text: {
-                button: "Add to cart"
-              },
+              text: { button: "Add to cart" },
               styles: {
-                title: {
-                  "font-size": "26px",
-                  "color": "#a13d2d"
-                },
+                title: { "font-size": "26px", "color": "#a13d2d" },
                 button: {
                   "font-size": "13px",
                   "padding-top": "14.5px",
@@ -611,100 +619,23 @@ if (backToTop) {
                   ":focus": { "background-color": "#913729" },
                   "border-radius": "0px"
                 },
-                quantityInput: {
-                  "font-size": "13px",
-                  "padding-top": "14.5px",
-                  "padding-bottom": "14.5px"
-                },
-                price: {
-                  "font-size": "18px",
-                  "color": "#555555"
-                },
-                compareAt: {
-                  "font-size": "15.3px",
-                  "color": "#555555"
-                },
-                unitPrice: {
-                  "font-size": "15.3px",
-                  "color": "#555555"
-                }
-              }
-            },
-            productSet: {
-              styles: {
-                products: {
-                  "@media (min-width: 601px)": {
-                    "margin-left": "-20px"
+                quantityInput: { "font-size": "13px", "padding-top": "14.5px", "padding-bottom": "14.5px" },
+                price: { "font-size": "18px", "color": "#555555" },
+                compareAt: { "font-size": "15.3px", "color": "#555555" },
+                unitPrice: { "font-size": "15.3px", "color": "#555555" }
+              },
+              // <-- This catches every dropdown change and switches the SKU text dynamically
+              events: {
+                update: function (component) {
+                  var skuNode = document.getElementById('product-sku-display');
+                  if (skuNode && component.selectedVariant) {
+                    skuNode.textContent = component.selectedVariant.sku;
                   }
                 }
-              }
-            },
-            modalProduct: {
-              contents: {
-                img: false,
-                imgWithCarousel: true,
-                button: false,
-                buttonWithQuantity: true
-              },
-              styles: {
-                product: {
-                  "@media (min-width: 601px)": {
-                    "max-width": "100%",
-                    "margin-left": "0px",
-                    "margin-bottom": "0px"
-                  }
-                },
-                button: {
-                  "font-size": "13px",
-                  "padding-top": "14.5px",
-                  "padding-bottom": "14.5px",
-                  "padding-left": "87px",
-                  "padding-right": "87px",
-                  "background-color": "#a13d2d",
-                  ":hover": { "background-color": "#913729" },
-                  ":focus": { "background-color": "#913729" },
-                  "border-radius": "0px"
-                },
-                quantityInput: {
-                  "font-size": "13px",
-                  "padding-top": "14.5px",
-                  "padding-bottom": "14.5px"
-                },
-                title: {
-                  "font-family": "Helvetica Neue, sans-serif",
-                  "font-weight": "bold",
-                  "font-size": "26px",
-                  "color": "#4c4c4c"
-                },
-                price: {
-                  "font-family": "Helvetica Neue, sans-serif",
-                  "font-weight": "normal",
-                  "font-size": "18px",
-                  "color": "#4c4c4c"
-                },
-                compareAt: {
-                  "font-family": "Helvetica Neue, sans-serif",
-                  "font-weight": "normal",
-                  "font-size": "15.3px",
-                  "color": "#4c4c4c"
-                },
-                unitPrice: {
-                  "font-family": "Helvetica Neue, sans-serif",
-                  "font-weight": "normal",
-                  "font-size": "15.3px",
-                  "color": "#4c4c4c"
-                }
-              },
-              text: {
-                button: "Add to cart"
               }
             },
             option: {
-              styles: {
-                label: {
-                  "font-size": "15px"
-                }
-              }
+              styles: { label: { "font-size": "15px" } }
             }
           }
         });
@@ -724,6 +655,5 @@ if (backToTop) {
   }
 })();
 </script>
-
 </body>
 </html>
