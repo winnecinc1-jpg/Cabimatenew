@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Cabimate Hardware Product Feed</title>
+    <link>https://cabimatehardware.com</link>
+    <description>Product inventory for Google Merchant Center</description>
+    
+    <!-- ITEM 1: VARIANT 1 (e.g., 128mm Antique Brass) -->
+    <item>
+      <g:id>A21-000PCH</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Knob - 000mm Polish Chrome</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?_pos=1&_sid=3ea19085d&_ss=r</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Knob-BrushedSatinNickel.png?v=1786050686</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>4.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:gtin></g:gtin> <!-- Leave blank if using custom MPN/SKU instead of UPC -->
+      <g:mpn>A21-000PCH</g:mpn>
+      <g:color>Polish Chrome</g:color>
+      <g:size>000mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+    <!-- ITEM 2: VARIANT 2 (e.g., 160mm Satin Nickel) -->
+    <item>
+      <g:id>A21-128PCH</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 128mm Polish Chrome</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254258217114</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Handles-Polish_Chrome.jpg?v=1789754652</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>6.70 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-128PCH</g:mpn>
+      <g:color>Polish Chrome</g:color>
+      <g:size>128mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+    
+    <!-- ITEM 3: VARIANT 3 (e.g., 160mm Satin Nickel) -->
+    <item>
+      <g:id>A21-160PCH</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 160mm Polish Chrome</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254266769562</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Handles-Polish_Chrome.jpg?v=1789754652</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>7.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-160PCH</g:mpn>
+      <g:color>Polish Chrome</g:color>
+      <g:size>160mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+        <!-- ITEM 4: VARIANT 4 (e.g., 160mm Satin Nickel) -->
+    <item>
+      <g:id>A21-320PCH</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 320mm Polish Chrome</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254266769562</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Handles-Polish_Chrome.jpg?v=1789754652</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>17.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-320PCH</g:mpn>
+      <g:color>Polish Chrome</g:color>
+      <g:size>320mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+            <!-- ITEM 5: VARIANT 5  -->
+    <item>
+      <g:id>A21-000MBK</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 000mm Matte Black</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254258217114</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Knob-MatteBlack.png?v=1786050631</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>4.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-000MBK</g:mpn>
+      <g:color>Matte Black</g:color>
+      <g:size>000mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                <!-- ITEM 6: VARIANT   -->
+    <item>
+      <g:id>A21-128MBK</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 128mm Matte Black</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254258315418</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-C_-Handles-Matte_Black.jpg?v=1789759279</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>6.70 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-128MBK</g:mpn>
+      <g:color>Matte Black</g:color>
+      <g:size>128mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                    <!-- ITEM 7: VARIANT   -->
+    <item>
+      <g:id>A21-160MBK</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 160mm Matte Black</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254266835098</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-C_-Handles-Matte_Black.jpg?v=1789759279</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>7.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-160MBK</g:mpn>
+      <g:color>Matte Black</g:color>
+      <g:size>160mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                        <!-- ITEM 8: VARIANT   -->
+    <item>
+      <g:id>A21-320MBK</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 320mm Matte Black</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254266867866</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-C_-Handles-Matte_Black.jpg?v=1789759279</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>17.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-320MBK</g:mpn>
+      <g:color>Matte Black</g:color>
+      <g:size>160mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                            <!-- ITEM 9: VARIANT   -->
+    <item>
+      <g:id>A21-000BSN</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 000mm Brush Satin Nickel</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254258348186</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Handles-Brushed_Satin_Nickel.jpg?v=1789760973</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>4.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-000BSN</g:mpn>
+      <g:color>Brush Satin Nickel</g:color>
+      <g:size>000mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                                <!-- ITEM 10: VARIANT   -->
+    <item>
+      <g:id>A21-128BSN</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 128mm Brush Satin Nickel</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Handles-Polish_Chrome.jpg?v=1789754652</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>6.70 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-128BSN</g:mpn>
+      <g:color>Brush Satin Nickel</g:color>
+      <g:size>128mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                                    <!-- ITEM 11: VARIANT   -->
+    <item>
+      <g:id>A21-160BSN</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 160mm Brush Satin Nickel</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254266900634</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Handles-Polish_Chrome.jpg?v=1789754652</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>7.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-160BSN</g:mpn>
+      <g:color>Brush Satin Nickel</g:color>
+      <g:size>160mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                                        <!-- ITEM 12: VARIANT   -->
+    <item>
+      <g:id>A21-320BSN</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 320mm Brush Satin Nickel</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Handles-Polish_Chrome.jpg?v=1789754652</link>
+      <g:image_link></g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>17.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-320BSN</g:mpn>
+      <g:color>Brush Satin Nickel</g:color>
+      <g:size>320mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                                            <!-- ITEM 13: VARIANT   -->
+    <item>
+      <g:id>A21-000ABR</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 000mm Amber Brass</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Knob-Amberbrass.png?v=1786050731</link>
+      <g:image_link></g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>4.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-000ABR</g:mpn>
+      <g:color>Amber Brass</g:color>
+      <g:size>000mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                                                <!-- ITEM 14: VARIANT   -->
+    <item>
+      <g:id>A21-128ABR</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 128mm Amber Brass</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Handles-Amberbrass.png?v=1786050825</link>
+      <g:image_link></g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>6.70 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-128ABR</g:mpn>
+      <g:color>Amber Brass</g:color>
+      <g:size>128mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                                                  <!-- ITEM 15: VARIANT   -->
+    <item>
+      <g:id>A21-160ABR</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 160mm Amber Brass</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254267031706</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Handles-Amberbrass.png?v=1786050825</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>7.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-160ABR</g:mpn>
+      <g:color>Amber Brass</g:color>
+      <g:size>160mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                                                  <!-- ITEM 16: VARIANT   -->
+    <item>
+      <g:id>A21-320ABR</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Leeds Cabinet Pull - 320mm Amber Brass</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/leeds-collection-transitional-architectural-handles-knobs?variant=48254267064474</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Leeds-Collection-Cabinet-Handles-Amberbrass.png?v=1786050825</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>17.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A21-320ABR</g:mpn>
+      <g:color>Amber Brass</g:color>
+      <g:size>320mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+                                                  <!-- ITEM 17: VARIANT   -->
+    <item>
+      <g:id>A22-000BSN</g:id>
+      <g:item_group_id>8980306952346</g:item_group_id>
+      <title>Sheffield Cabinet Pull - 000mm Brushed Satin Nickel</title>
+      <description>High-performance cabinet pull hardware from the Leeds Collection. Durable finish and solid feel.</description>
+      <link>https://winnecinc.com/products/sheffield-collection-geometric-silhouette-and-clean-architectural-line-handles-knobs</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0566/2405/4426/files/The-Sheffield-Collection-Cabinet-Knobs-Brushed-Satin-Nickel.png?v=1786050115</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>4.45 CAD</g:price>
+      <g:brand>Cabimate Hardware</g:brand>
+      <g:mpn>A22-000BSN</g:mpn>
+      <g:color>Brushed Satin Nickel</g:color>
+      <g:size>000mm</g:size>
+      <g:item_group_id>Leeds-Pull-Group</g:item_group_id>
+    </item>
+
+  </channel>
+</rss>

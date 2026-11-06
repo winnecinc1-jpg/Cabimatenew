@@ -522,13 +522,14 @@ if (backToTop) {
 
 
 
-<!-- PRODUCT BUTTON RENDERS -->
+<!-- 1. KEEP THIS OUTSIDE: Your static placeholder container -->
+<div style="margin: 15px 0; font-size: 16px; color: #4c4c4c;">
+  <strong>SKU:</strong> <span id="product-sku-display" style="font-weight: bold; color: #a13d2d;">Loading SKU...</span>
+</div>
+
+<!-- 2. WHERE THE PRODUCT BUTTON RENDERS -->
 <div id="product-component-1786136595313"></div>
 
-<!--  PLACEHOLDER RIGHT HERE -->
-<div style="margin: 15px 0; font-size: 16px; color: #4c4c4c;">
-  <strong>SKU:</strong> <span id="product-sku-display">Loading SKU...</span>
-</div>
 <script>
 (function () {
   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -547,17 +548,9 @@ if (backToTop) {
       storefrontAccessToken: '7c734f042447288daa601fdedb8718df',
     });
 
-    // 1. Fetch initial SKU on load so it isn't blank
-    client.product.fetch('8980306952346').then(function (product) {
-      var skuNode = document.getElementById('product-sku-display');
-      if (skuNode && product.variants.length > 0) {
-        skuNode.textContent = product.variants[0].sku;
-      }
-    });
-
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       
-      // 2. GLOBAL FLOATING CART
+      // 1. GLOBAL FLOATING CART
       ui.createComponent('cart', {
         node: document.getElementById('shopify-cart-node') || document.body,
         options: {
@@ -588,7 +581,7 @@ if (backToTop) {
         }
       });
 
-      // 3. PRODUCT COMPONENT WITH LIVE SKU LISTENER
+      // 2. PRODUCT COMPONENT
       var targetNode = document.getElementById('product-component-1786136595313');
       if (targetNode) {
         ui.createComponent('product', {
@@ -603,7 +596,7 @@ if (backToTop) {
                 img: false,
                 imgWithCarousel: true,
                 description: true,
-                options: true // <-- Renders length and color selectors
+                options: true
               },
               text: { button: "Add to cart" },
               styles: {
@@ -624,12 +617,19 @@ if (backToTop) {
                 compareAt: { "font-size": "15.3px", "color": "#555555" },
                 unitPrice: { "font-size": "15.3px", "color": "#555555" }
               },
-              // <-- This catches every dropdown change and switches the SKU text dynamically
               events: {
-                update: function (component) {
+                afterRender: function (component) {
+                  // Sets the initial SKU immediately when the component loads
                   var skuNode = document.getElementById('product-sku-display');
                   if (skuNode && component.selectedVariant) {
-                    skuNode.textContent = component.selectedVariant.sku;
+                    skuNode.textContent = component.selectedVariant.sku || 'No SKU Assigned';
+                  }
+                },
+                update: function (component) {
+                  // Fires every single time a dropdown option is changed
+                  var skuNode = document.getElementById('product-sku-display');
+                  if (skuNode && component.selectedVariant) {
+                    skuNode.textContent = component.selectedVariant.sku || 'No SKU Assigned';
                   }
                 }
               }
@@ -655,5 +655,6 @@ if (backToTop) {
   }
 })();
 </script>
+
 </body>
 </html>
